@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		030C51C066427EEA670F8396 /* BreathingPatternVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD343657A2FD0D93BE5FA7D /* BreathingPatternVisualizerView.swift */; };
+		1298257D7515C22F46BDCA09 /* AIInsightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9EE260BD928B4392193FF0 /* AIInsightsService.swift */; };
 		13D990EE6DBC8DB7ED73B53D /* OrbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D20E36C03A3188A11786E /* OrbView.swift */; };
 		142ED1C2CEBBE479129FB3F7 /* BreathingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90BB884685E847D8CD4146 /* BreathingSession.swift */; };
 		16A15952123063900FF40533 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6331B7BDAD97770FC174ACD /* ErrorStateView.swift */; };
@@ -30,18 +31,24 @@
 		C047D932F3DAB321C62E5483 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E10B1A18C4E09C61EE560 /* HapticService.swift */; };
 		D32C74DC887FF317CE9DB4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9ED51CF4BFB54B18FEE1B /* Assets.xcassets */; };
 		D73FC0ACC4EDC7FEDE08EED4 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F501779D336B0084E4E66FE /* SessionType.swift */; };
+		E89807E8C663EF5172E2C3B1 /* AIInsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E8A44824C117D7744E237D /* AIInsightsView.swift */; };
+		E98AA2B25D9744FC5B772C92 /* CommunityPatternsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C389627A97CD74C472142A /* CommunityPatternsService.swift */; };
 		E99A1D88F407466964340908 /* SoundMixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF79DE842A1D2F5CD15B24F /* SoundMixerView.swift */; };
 		F7A140150669753634BACE7A /* BreathGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EDEDC6BCE515B8F4C1F3E /* BreathGuideView.swift */; };
+		F7E46ADC381929E965EFDE07 /* CommunityPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B985C6B539381AE5981E0 /* CommunityPatternsView.swift */; };
 		FB8FCC9021D5E5D2AA676D29 /* AppStoreDescription.md in Resources */ = {isa = PBXBuildFile; fileRef = DD11A6225E037E9C6D5540E1 /* AppStoreDescription.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C389627A97CD74C472142A /* CommunityPatternsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPatternsService.swift; sourceTree = "<group>"; };
 		03A307BE7415C60BA5025F09 /* SessionHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHistoryManager.swift; sourceTree = "<group>"; };
 		2F268D96377FC8557A689C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		46B04D612BE8A12071F28264 /* MuseWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseWatchApp.swift; sourceTree = "<group>"; };
 		4FE80C53F730B743DDCBCABC /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
 		58DA8724BF463AC3BFFC6319 /* WatchOrbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOrbView.swift; sourceTree = "<group>"; };
+		6B6B985C6B539381AE5981E0 /* CommunityPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPatternsView.swift; sourceTree = "<group>"; };
 		79F585A0A4B85250CA5C8F64 /* BreathingPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingPattern.swift; sourceTree = "<group>"; };
+		7A9EE260BD928B4392193FF0 /* AIInsightsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIInsightsService.swift; sourceTree = "<group>"; };
 		7BB40AE779D0213979FA206A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F501779D336B0084E4E66FE /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
 		834F4F70315E2B75900F555A /* PatternSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternSelectionView.swift; sourceTree = "<group>"; };
@@ -58,6 +65,7 @@
 		BC19E4BC618EC6F5DCBECB53 /* Muse.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Muse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03531561490649BA35082E6 /* MuseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseApp.swift; sourceTree = "<group>"; };
 		C0DF6F0098983064DBC362F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0E8A44824C117D7744E237D /* AIInsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIInsightsView.swift; sourceTree = "<group>"; };
 		C1C8FF3E9AE1E901F99A6E39 /* MuseWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61DFFA06EC5FD4E48E51366 /* BreatheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheView.swift; sourceTree = "<group>"; };
 		C98EDEDC6BCE515B8F4C1F3E /* BreathGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathGuideView.swift; sourceTree = "<group>"; };
@@ -87,9 +95,11 @@
 		57A8C8D74C0CB68A10D272F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0E8A44824C117D7744E237D /* AIInsightsView.swift */,
 				C61DFFA06EC5FD4E48E51366 /* BreatheView.swift */,
 				C98EDEDC6BCE515B8F4C1F3E /* BreathGuideView.swift */,
 				DAD343657A2FD0D93BE5FA7D /* BreathingPatternVisualizerView.swift */,
+				6B6B985C6B539381AE5981E0 /* CommunityPatternsView.swift */,
 				E6331B7BDAD97770FC174ACD /* ErrorStateView.swift */,
 				AD57997FF06CBA85FBAEE465 /* OnboardingView.swift */,
 				E65D20E36C03A3188A11786E /* OrbView.swift */,
@@ -105,6 +115,8 @@
 		8C53A788492E048B4CC8D5EB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7A9EE260BD928B4392193FF0 /* AIInsightsService.swift */,
+				00C389627A97CD74C472142A /* CommunityPatternsService.swift */,
 				9A7E10B1A18C4E09C61EE560 /* HapticService.swift */,
 				4FE80C53F730B743DDCBCABC /* ReminderManager.swift */,
 				03A307BE7415C60BA5025F09 /* SessionHistoryManager.swift */,
@@ -274,11 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1298257D7515C22F46BDCA09 /* AIInsightsService.swift in Sources */,
+				E89807E8C663EF5172E2C3B1 /* AIInsightsView.swift in Sources */,
 				F7A140150669753634BACE7A /* BreathGuideView.swift in Sources */,
 				262A81B53F88291DBFAB6908 /* BreatheView.swift in Sources */,
 				48EE47CA9E75D3A12C3E4D4B /* BreathingPattern.swift in Sources */,
 				030C51C066427EEA670F8396 /* BreathingPatternVisualizerView.swift in Sources */,
 				142ED1C2CEBBE479129FB3F7 /* BreathingSession.swift in Sources */,
+				E98AA2B25D9744FC5B772C92 /* CommunityPatternsService.swift in Sources */,
+				F7E46ADC381929E965EFDE07 /* CommunityPatternsView.swift in Sources */,
 				16A15952123063900FF40533 /* ErrorStateView.swift in Sources */,
 				C047D932F3DAB321C62E5483 /* HapticService.swift in Sources */,
 				92EF47B550EB545ADC2C2D1F /* MuseApp.swift in Sources */,

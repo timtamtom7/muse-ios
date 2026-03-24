@@ -5,6 +5,8 @@ struct SettingsView: View {
     @State private var subscriptionManager = SubscriptionManager.shared
     @State private var reminderManager = ReminderManager.shared
     @State private var showHistory = false
+    @State private var showCommunity = false
+    @State private var showInsights = false
     @State private var showReminderTimePicker = false
     @State private var showNotificationDeniedAlert = false
 
@@ -163,6 +165,44 @@ struct SettingsView: View {
                             Text("Session History")
                                 .foregroundStyle(Color(hex: "e8d5c4"))
                             Spacer()
+                            if !subscriptionManager.currentTier.hasSessionHistory {
+                                Image(systemName: "lock.fill")
+                                    .font(.system(size: 10))
+                                    .foregroundStyle(Color(hex: "6b6560").opacity(0.5))
+                            }
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 12, weight: .medium))
+                                .foregroundStyle(Color(hex: "6b6560").opacity(0.5))
+                        }
+                    }
+                    .disabled(!subscriptionManager.currentTier.hasSessionHistory)
+                    .opacity(subscriptionManager.currentTier.hasSessionHistory ? 1 : 0.4)
+
+                    Button {
+                        showCommunity = true
+                    } label: {
+                        HStack {
+                            Text("Community Patterns")
+                                .foregroundStyle(Color(hex: "e8d5c4"))
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 12, weight: .medium))
+                                .foregroundStyle(Color(hex: "6b6560").opacity(0.5))
+                        }
+                    }
+
+                    Button {
+                        showInsights = true
+                    } label: {
+                        HStack {
+                            HStack(spacing: 6) {
+                                Text("AI Insights")
+                                    .foregroundStyle(Color(hex: "e8d5c4"))
+                                Image(systemName: "sparkles")
+                                    .font(.system(size: 10))
+                                    .foregroundStyle(Color(hex: "c4a87a"))
+                            }
+                            Spacer()
                             Image(systemName: "chevron.right")
                                 .font(.system(size: 12, weight: .medium))
                                 .foregroundStyle(Color(hex: "6b6560").opacity(0.5))
@@ -248,6 +288,12 @@ struct SettingsView: View {
         }
         .sheet(isPresented: $showHistory) {
             SessionHistoryView()
+        }
+        .sheet(isPresented: $showCommunity) {
+            CommunityPatternsView()
+        }
+        .sheet(isPresented: $showInsights) {
+            AIInsightsView()
         }
         .sheet(isPresented: $showReminderTimePicker) {
             ReminderTimePickerSheet(
