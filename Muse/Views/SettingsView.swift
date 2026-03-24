@@ -3,7 +3,10 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var subscriptionManager = SubscriptionManager.shared
+    @State private var reminderManager = ReminderManager.shared
     @State private var showHistory = false
+    @State private var showReminderTimePicker = false
+    @State private var showNotificationDeniedAlert = false
 
     var onShowPricing: () -> Void
 
@@ -65,6 +68,73 @@ struct SettingsView: View {
                 }
                 .listRowBackground(Color(hex: "1a1a1f"))
 
+                // Reminders
+                Section {
+                    Toggle(isOn: Binding(
+                        get: { reminderManager.reminderEnabled },
+                        set: { newValue in
+                            if newValue {
+                                if reminderManager.permissionStatus == .authorized {
+                                    reminderManager.reminderEnabled = true
+                                } else if reminderManager.permissionStatus == .notDetermined {
+                                    Task {
+                                        let granted = await reminderManager.requestPermission()
+                                        if granted {
+                                            await MainActor.run {
+                                                reminderManager.reminderEnabled = true
+                                            }
+                                        } else {
+                                            await MainActor.run {
+                                                showNotificationDeniedAlert = true
+                                            }
+                                        }
+                                    }
+                                } else {
+                                    showNotificationDeniedAlert = true
+                                }
+                            } else {
+                                reminderManager.reminderEnabled = false
+                            }
+                        }
+                    )) {
+                        HStack {
+                            Text("Daily Reminder")
+                                .foregroundStyle(Color(hex: "e8d5c4"))
+                            Spacer()
+                        }
+                    }
+                    .tint(Color(hex: "e8d5c4"))
+
+                    if reminderManager.reminderEnabled {
+                        Button {
+                            showReminderTimePicker = true
+                        } label: {
+                            HStack {
+                                Text("Reminder Time")
+                                    .foregroundStyle(Color(hex: "e8d5c4"))
+                                Spacer()
+                                Text(reminderManager.formattedReminderTime)
+                                    .foregroundStyle(Color(hex: "6b6560"))
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 11, weight: .medium))
+                                    .foregroundStyle(Color(hex: "6b6560").opacity(0.5))
+                            }
+                        }
+                    }
+                } header: {
+                    Text("Reminders")
+                        .foregroundStyle(Color(hex: "6b6560"))
+                } footer: {
+                    if reminderManager.permissionStatus == .denied {
+                        Text("Notifications are blocked. Enable them in Settings > Muse > Notifications.")
+                            .foregroundStyle(Color(hex: "c4a87a"))
+                    } else {
+                        Text("Get a gentle nudge each day to breathe.")
+                            .foregroundStyle(Color(hex: "6b6560"))
+                    }
+                }
+                .listRowBackground(Color(hex: "1a1a1f"))
+
                 // Feedback
                 Section {
                     Toggle(isOn: Binding(
@@ -113,7 +183,7 @@ struct SettingsView: View {
                             .font(.system(size: 15, weight: .medium))
                             .foregroundStyle(Color(hex: "e8d5c4"))
 
-                        Text("Open the app, choose your duration, then tap the orb to begin. Breathe in as the orb expands, breathe out as it contracts. Each cycle is 12 seconds: 4s inhale, 2s hold, 4s exhale, 2s hold. When time is up, the orb fades and a gentle haptic marks the end.")
+                        Text("Open the app, choose your duration and breathing pattern, then tap the orb to begin. Breathe in as the orb expands, breathe out as it contracts. Each cycle varies by pattern — box breathing is 4-4-4-4. When time is up, the orb fades and a gentle haptic marks the end.")
                             .font(.system(size: 13))
                             .foregroundStyle(Color(hex: "6b6560"))
                             .lineSpacing(4)
@@ -178,6 +248,81 @@ struct SettingsView: View {
         }
         .sheet(isPresented: $showHistory) {
             SessionHistoryView()
+        }
+        .sheet(isPresented: $showReminderTimePicker) {
+            ReminderTimePickerSheet(
+                currentTime: reminderManager.reminderTime,
+                onSave: { newTime in
+                    reminderManager.reminderTime = newTime
+                }
+            )
+            .presentationDetents([.height(300)])
+        }
+        .alert("Notifications Blocked", isPresented: $showNotificationDeniedAlert) {
+            Button("Open Settings") {
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url)
+                }
+            }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("Please enable notifications for Muse in Settings > Notifications to receive daily reminders.")
+        }
+        .tint(Color(hex: "e8d5c4"))
+    }
+}
+
+struct ReminderTimePickerSheet: View {
+    @Environment(\.dismiss) private var dismiss
+    let currentTime: Date
+    let onSave: (Date) -> Void
+
+    @State private var selectedTime: Date
+
+    init(currentTime: Date, onSave: @escaping (Date) -> Void) {
+        self.currentTime = currentTime
+        self.onSave = onSave
+        _selectedTime = State(initialValue: currentTime)
+    }
+
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                Color(hex: "050508")
+                    .ignoresSafeArea()
+
+                VStack(spacing: 24) {
+                    DatePicker(
+                        "Reminder Time",
+                        selection: $selectedTime,
+                        displayedComponents: .hourAndMinute
+                    )
+                    .datePickerStyle(.wheel)
+                    .labelsHidden()
+                    .colorScheme(.dark)
+
+                    Button {
+                        onSave(selectedTime)
+                        dismiss()
+                    } label: {
+                        Text("Save")
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundStyle(Color(hex: "050508"))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(Color(hex: "e8d5c4"), in: Capsule())
+                    }
+                    .padding(.horizontal, 24)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
+                    .foregroundStyle(Color(hex: "6b6560"))
+                }
+            }
         }
         .tint(Color(hex: "e8d5c4"))
     }

@@ -352,3 +352,182 @@ struct SessionCompleteCard: View {
         onDismiss: {}
     )
 }
+
+// MARK: - Notification Permission Denied
+
+struct NotificationDeniedErrorView: View {
+    let onOpenSettings: () -> Void
+    let onDismiss: () -> Void
+
+    @State private var opacity: Double = 0
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.6)
+                .ignoresSafeArea()
+                .onTapGesture { dismiss() }
+
+            VStack(spacing: 16) {
+                Image(systemName: "bell.slash")
+                    .font(.system(size: 36))
+                    .foregroundStyle(Color(hex: "c4b5a0"))
+
+                Text("Notifications disabled")
+                    .font(.system(size: 20, weight: .light, design: .rounded))
+                    .foregroundStyle(Color(hex: "e8d5c4"))
+
+                Text("Daily reminders require notifications. Enable them in Settings, or breathe without reminders.")
+                    .font(.system(size: 13))
+                    .foregroundStyle(Color(hex: "6b6560"))
+                    .multilineTextAlignment(.center)
+                    .lineSpacing(3)
+
+                HStack(spacing: 12) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Skip")
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundStyle(Color(hex: "6b6560"))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+                            .background(Color(hex: "1e1e24"), in: Capsule())
+                    }
+
+                    Button {
+                        onOpenSettings()
+                    } label: {
+                        Text("Open Settings")
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundStyle(Color(hex: "050508"))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+                            .background(Color(hex: "e8d5c4"), in: Capsule())
+                    }
+                }
+            }
+            .padding(32)
+            .background(
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(Color(hex: "0f0f14"))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
+                    )
+            )
+            .padding(.horizontal, 32)
+        }
+        .opacity(opacity)
+        .onAppear {
+            withAnimation(.easeOut(duration: 0.25)) {
+                opacity = 1
+            }
+        }
+    }
+
+    private func dismiss() {
+        withAnimation(.easeOut(duration: 0.2)) {
+            opacity = 0
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            onDismiss()
+        }
+    }
+}
+
+// MARK: - Pattern Save Failed
+
+struct PatternSaveFailedView: View {
+    let onRetry: () -> Void
+    let onDismiss: () -> Void
+
+    @State private var opacity: Double = 0
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.6)
+                .ignoresSafeArea()
+                .onTapGesture { dismiss() }
+
+            VStack(spacing: 16) {
+                Image(systemName: "exclamationmark.triangle")
+                    .font(.system(size: 36))
+                    .foregroundStyle(Color(hex: "c4b5a0"))
+
+                Text("Couldn't save pattern")
+                    .font(.system(size: 20, weight: .light, design: .rounded))
+                    .foregroundStyle(Color(hex: "e8d5c4"))
+
+                Text("Something went wrong saving your custom breathing pattern. Please try again.")
+                    .font(.system(size: 13))
+                    .foregroundStyle(Color(hex: "6b6560"))
+                    .multilineTextAlignment(.center)
+                    .lineSpacing(3)
+
+                HStack(spacing: 12) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Cancel")
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundStyle(Color(hex: "6b6560"))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+                            .background(Color(hex: "1e1e24"), in: Capsule())
+                    }
+
+                    Button {
+                        dismiss()
+                        onRetry()
+                    } label: {
+                        Text("Try again")
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundStyle(Color(hex: "050508"))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+                            .background(Color(hex: "e8d5c4"), in: Capsule())
+                    }
+                }
+            }
+            .padding(32)
+            .background(
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(Color(hex: "0f0f14"))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
+                    )
+            )
+            .padding(.horizontal, 32)
+        }
+        .opacity(opacity)
+        .onAppear {
+            withAnimation(.easeOut(duration: 0.25)) {
+                opacity = 1
+            }
+        }
+    }
+
+    private func dismiss() {
+        withAnimation(.easeOut(duration: 0.2)) {
+            opacity = 0
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            onDismiss()
+        }
+    }
+}
+
+#Preview("Notification denied") {
+    NotificationDeniedErrorView(
+        onOpenSettings: {},
+        onDismiss: {}
+    )
+}
+
+#Preview("Pattern save failed") {
+    PatternSaveFailedView(
+        onRetry: {},
+        onDismiss: {}
+    )
+}

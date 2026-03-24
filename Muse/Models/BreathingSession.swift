@@ -16,10 +16,12 @@ struct BreathingSession {
     var phase: BreathPhase = .idle
     var isActive: Bool = false
 
-    let inhaleDuration: TimeInterval = 4
-    let holdInDuration: TimeInterval = 2
-    let exhaleDuration: TimeInterval = 4
-    let holdOutDuration: TimeInterval = 2
+    var pattern: BreathingPattern = .default
+
+    var inhaleDuration: TimeInterval { pattern.inhaleSeconds }
+    var holdInDuration: TimeInterval { pattern.holdInSeconds }
+    var exhaleDuration: TimeInterval { pattern.exhaleSeconds }
+    var holdOutDuration: TimeInterval { pattern.holdOutSeconds }
 
     var phaseProgress: Double = 0.0 // 0.0 to 1.0 within current phase
     var overallProgress: Double { elapsedTime / totalDuration }
@@ -40,22 +42,28 @@ struct BreathingSession {
         elapsedTime = elapsed
 
         let cycleDuration = inhaleDuration + holdInDuration + exhaleDuration + holdOutDuration
+        guard cycleDuration > 0 else {
+            phase = .complete
+            isActive = false
+            return
+        }
+
         let cyclePosition = elapsed.truncatingRemainder(dividingBy: cycleDuration)
         let totalPhases = 4
         let phaseLength = cycleDuration / Double(totalPhases)
 
         if cyclePosition < phaseLength {
             phase = .inhale
-            phaseProgress = cyclePosition / phaseLength
+            phaseProgress = inhaleDuration > 0 ? cyclePosition / phaseLength : 1.0
         } else if cyclePosition < phaseLength * 2 {
             phase = .holdIn
-            phaseProgress = (cyclePosition - phaseLength) / phaseLength
+            phaseProgress = holdInDuration > 0 ? (cyclePosition - phaseLength) / phaseLength : 1.0
         } else if cyclePosition < phaseLength * 3 {
             phase = .exhale
-            phaseProgress = (cyclePosition - phaseLength * 2) / phaseLength
+            phaseProgress = exhaleDuration > 0 ? (cyclePosition - phaseLength * 2) / phaseLength : 1.0
         } else if cyclePosition < cycleDuration {
             phase = .holdOut
-            phaseProgress = (cyclePosition - phaseLength * 3) / phaseLength
+            phaseProgress = holdOutDuration > 0 ? (cyclePosition - phaseLength * 3) / phaseLength : 1.0
         }
 
         if elapsed >= totalDuration {
@@ -93,6 +101,10 @@ final class BreathingSessionManager {
         return String(format: "%d:%02d", minutes, seconds)
     }
 
+    func applyPattern(_ pattern: BreathingPattern) {
+        session.pattern = pattern
+    }
+
     func start() {
         session.start()
     }
@@ -106,6 +118,171 @@ final class BreathingSessionManager {
         session.update(elapsed: elapsed)
         if session.phase != prevPhase {
             lastPhase = prevPhase
+        }
+    }
+}
+
+import Foundation
+
+struct SessionRecord: Codable, Identifiable {
+    let id: UUID
+    let date: Date
+    let durationMinutes: Int
+    let completedCycles: Int
+    var patternName: String?
+
+    var formattedDate: String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter.string(from: date)
+    }
+
+    var relativeDate: String {
+        let formatter = RelativeDateTimeFormatter()
+        formatter.unitsStyle = .abbreviated
+        return formatter.localizedString(for: date, relativeTo: Date())
+    }
+}
+
+@Observable
+final class SessionHistoryManager {
+    static let shared = SessionHistoryManager()
+
+    private let historyKey = "sessionHistory"
+    private let streakKey = "sessionStreak"
+    private let maxHistoryCount = 500
+
+    var sessions: [SessionRecord] = []
+
+    init() {
+        loadSessions()
+    }
+
+    private func loadSessions() {
+        guard let data = UserDefaults.standard.data(forKey: historyKey),
+              let decoded = try? JSONDecoder().decode([SessionRecord].self, from: data) else {
+            sessions = []
+            return
+        }
+        sessions = decoded
+    }
+
+    private func saveSessions() {
+        guard let encoded = try? JSONEncoder().encode(sessions) else { return }
+        UserDefaults.standard.set(encoded, forKey: historyKey)
+    }
+
+    func recordSession(durationMinutes: Int, completedCycles: Int, patternName: String? = nil) {
+        let record = SessionRecord(
+            id: UUID(),
+            date: Date(),
+            durationMinutes: durationMinutes,
+            completedCycles: completedCycles,
+            patternName: patternName
+        )
+        sessions.insert(record, at: 0)
+        if sessions.count > maxHistoryCount {
+            sessions = Array(sessions.prefix(maxHistoryCount))
+        }
+        saveSessions()
+        updateStreak()
+    }
+
+    func clearHistory() {
+        sessions = []
+        UserDefaults.standard.removeObject(forKey: historyKey)
+    }
+
+    func deleteSession(_ session: SessionRecord) {
+        sessions.removeAll { $0.id == session.id }
+        saveSessions()
+    }
+
+    var totalMinutes: Int {
+        sessions.reduce(0) { $0 + $1.durationMinutes }
+    }
+
+    var totalSessions: Int {
+        sessions.count
+    }
+
+    var sessionsThisWeek: Int {
+        let weekAgo = Calendar.current.date(byAdding: .day, value: -7, to: Date()) ?? Date()
+        return sessions.filter { $0.date >= weekAgo }.count
+    }
+
+    var minutesThisWeek: Int {
+        let weekAgo = Calendar.current.date(byAdding: .day, value: -7, to: Date()) ?? Date()
+        return sessions.filter { $0.date >= weekAgo }.reduce(0) { $0 + $1.durationMinutes }
+    }
+
+    var averageDurationMinutes: Int {
+        guard !sessions.isEmpty else { return 0 }
+        return totalMinutes / sessions.count
+    }
+
+    var currentStreak: Int {
+        get {
+            UserDefaults.standard.integer(forKey: streakKey)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: streakKey)
+        }
+    }
+
+    var longestStreak: Int {
+        get {
+            UserDefaults.standard.integer(forKey: "longestStreak")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "longestStreak")
+        }
+    }
+
+    /// Returns true if the user has no session today (streak at risk)
+    var isStreakAtRisk: Bool {
+        guard let lastSession = sessions.first else { return false }
+        let calendar = Calendar.current
+        if calendar.isDateInToday(lastSession.date) { return false }
+        // If streak > 0 and no session today, it's at risk
+        return currentStreak > 0
+    }
+
+    /// Returns true if streak is already broken
+    var isStreakBroken: Bool {
+        guard currentStreak > 0 else { return false }
+        guard let lastSession = sessions.first else { return true }
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let lastSessionDay = calendar.startOfDay(for: lastSession.date)
+        let daysDiff = calendar.dateComponents([.day], from: lastSessionDay, to: today).day ?? 0
+        return daysDiff > 1
+    }
+
+    private func updateStreak() {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+
+        if let lastSession = sessions.first {
+            let lastSessionDay = calendar.startOfDay(for: lastSession.date)
+            let daysDiff = calendar.dateComponents([.day], from: lastSessionDay, to: today).day ?? 0
+
+            if daysDiff == 0 {
+                // Same day, streak unchanged
+            } else if daysDiff == 1 {
+                // Consecutive day, increment streak
+                currentStreak += 1
+            } else {
+                // Streak broken, reset to 1 (today counts)
+                currentStreak = 1
+            }
+        } else {
+            currentStreak = 1
+        }
+
+        if currentStreak > longestStreak {
+            longestStreak = currentStreak
         }
     }
 }

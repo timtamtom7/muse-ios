@@ -4,17 +4,18 @@ struct BreatheView: View {
     @State private var sessionManager = BreathingSessionManager()
     @State private var subscriptionManager = SubscriptionManager.shared
     @State private var historyManager = SessionHistoryManager.shared
+    @State private var patternManager = BreathingPatternManager.shared
     @State private var showSettings = false
     @State private var showPricing = false
     @State private var showHistory = false
     @State private var showDurationPicker = false
+    @State private var showPatternSelection = false
     @State private var selectedMinutes: Int = 10
     @State private var showCompletionCard = false
     @State private var showInterrupted = false
     @State private var showHapticsAlert = false
     @State private var showNoSessions = false
     @State private var completedCycles: Int = 0
-    @State private var orbTapped = false
 
     @State private var displayDuration: Int = 10
     @State private var sessionStartTime: Date?
@@ -40,6 +41,27 @@ struct BreatheView: View {
                             .foregroundStyle(Color(hex: "6b6560"))
                             .padding(12)
                             .background(.ultraThinMaterial, in: Circle())
+                    }
+
+                    Spacer()
+
+                    // Pattern indicator (tappable if Master)
+                    Button {
+                        if subscriptionManager.currentTier.hasCustomBreathingPatterns ||
+                           !patternManager.customPatterns.isEmpty {
+                            showPatternSelection = true
+                        }
+                    } label: {
+                        HStack(spacing: 6) {
+                            Image(systemName: "wind")
+                                .font(.system(size: 12))
+                            Text(patternManager.selectedPattern.name)
+                                .font(.system(size: 12, weight: .medium))
+                        }
+                        .foregroundStyle(Color(hex: "6b6560"))
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(.ultraThinMaterial, in: Capsule())
                     }
 
                     Spacer()
@@ -152,6 +174,9 @@ struct BreatheView: View {
         .sheet(isPresented: $showHistory) {
             SessionHistoryView()
         }
+        .sheet(isPresented: $showPatternSelection) {
+            PatternSelectionView()
+        }
         .confirmationDialog("Select Duration", isPresented: $showDurationPicker, titleVisibility: .visible) {
             ForEach(subscriptionManager.availableDurations, id: \.self) { duration in
                 Button("\(duration) min") {
@@ -166,6 +191,7 @@ struct BreatheView: View {
         .onAppear {
             loadDefaults()
             checkHapticsAvailability()
+            applySelectedPattern()
         }
         .onChange(of: showCompletionCard) { _, newValue in
             if !newValue {
@@ -199,7 +225,14 @@ struct BreatheView: View {
         }
     }
 
+    private func applySelectedPattern() {
+        sessionManager.applyPattern(patternManager.selectedPattern)
+    }
+
     private func startSession() {
+        // Apply latest pattern selection
+        applySelectedPattern()
+
         // Check subscription limits
         if !subscriptionManager.canStartSession {
             showNoSessions = true
@@ -208,7 +241,6 @@ struct BreatheView: View {
 
         // Check duration limit
         if !subscriptionManager.canUseDuration(displayDuration) {
-            // Duration not available for tier — silently cap to max
             displayDuration = subscriptionManager.currentTier.maxDurationMinutes
         }
 
@@ -255,8 +287,14 @@ struct BreatheView: View {
                 if subscriptionManager.currentTier.hasSessionHistory {
                     historyManager.recordSession(
                         durationMinutes: selectedMinutes,
-                        completedCycles: completedCycles
+                        completedCycles: completedCycles,
+                        patternName: patternManager.selectedPattern.name
                     )
+
+                    // Schedule streak nudge if at risk
+                    if historyManager.isStreakAtRisk {
+                        ReminderManager.shared.scheduleStreakNudge()
+                    }
                 }
 
                 subscriptionManager.recordSession()
@@ -275,7 +313,6 @@ struct BreatheView: View {
 
     private func resumeSession() {
         showInterrupted = false
-        // Don't auto-resume — user taps orb to resume
     }
 
     private func discardInterrupted() {
@@ -290,6 +327,7 @@ struct BreatheView: View {
         sessionStartTime = nil
         previousPhase = .idle
         completedCycles = 0
+        applySelectedPattern()
     }
 
     private func handleAppBackground() {
