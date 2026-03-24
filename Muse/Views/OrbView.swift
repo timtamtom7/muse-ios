@@ -3,6 +3,7 @@ import SwiftUI
 struct OrbView: View {
     let phase: BreathPhase
     let phaseProgress: Double
+    var sessionType: SessionType = .focus
 
     private let minCoreSize: CGFloat = 80
     private let maxCoreSize: CGFloat = 240
@@ -45,9 +46,10 @@ struct OrbView: View {
         orbScale * 1.18
     }
 
-    private var coreColor: Color { Color(hex: "f5efe6") }
-    private var glowColor: Color { Color(hex: "f0e6d3") }
-    private var haloColor: Color { Color(hex: "e8d5c4") }
+    private var coreColor: Color { Color(hex: sessionType.orbCoreColor) }
+    private var glowColor: Color { Color(hex: sessionType.orbGlowColor) }
+    private var haloColor: Color { Color(hex: sessionType.orbHaloColor) }
+    private var highlightColor: Color { Color(hex: sessionType.orbHighlightColor) }
 
     var body: some View {
         GeometryReader { geometry in
@@ -91,7 +93,7 @@ struct OrbView: View {
                     .fill(
                         RadialGradient(
                             gradient: Gradient(stops: [
-                                .init(color: Color(hex: "fffcf5").opacity(glowOpacity), location: 0.0),
+                                .init(color: highlightColor.opacity(glowOpacity), location: 0.0),
                                 .init(color: coreColor.opacity(glowOpacity * 0.9), location: 0.4),
                                 .init(color: glowColor.opacity(glowOpacity * 0.7), location: 1.0)
                             ]),
@@ -129,11 +131,34 @@ extension Color {
     }
 }
 
-#Preview {
+#Preview("Focus") {
     ZStack {
-        Color(hex: "050508")
-            .ignoresSafeArea()
-        OrbView(phase: .inhale, phaseProgress: 0.5)
+        Color(hex: "050508").ignoresSafeArea()
+        OrbView(phase: .inhale, phaseProgress: 0.5, sessionType: .focus)
+            .frame(width: 300, height: 300)
+    }
+}
+
+#Preview("Sleep") {
+    ZStack {
+        Color(hex: "03040a").ignoresSafeArea()
+        OrbView(phase: .holdIn, phaseProgress: 1.0, sessionType: .sleep)
+            .frame(width: 300, height: 300)
+    }
+}
+
+#Preview("Relax") {
+    ZStack {
+        Color(hex: "080706").ignoresSafeArea()
+        OrbView(phase: .exhale, phaseProgress: 0.5, sessionType: .relax)
+            .frame(width: 300, height: 300)
+    }
+}
+
+#Preview("Wake Up") {
+    ZStack {
+        Color(hex: "0a0805").ignoresSafeArea()
+        OrbView(phase: .inhale, phaseProgress: 0.8, sessionType: .wakeUp)
             .frame(width: 300, height: 300)
     }
 }

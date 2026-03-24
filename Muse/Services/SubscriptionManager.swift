@@ -96,6 +96,13 @@ enum SubscriptionTier: String, CaseIterable {
         }
     }
 
+    var hasSoundscapes: Bool {
+        switch self {
+        case .free: return false
+        case .practice, .master: return true
+        }
+    }
+
     var features: [String] {
         switch self {
         case .free:
@@ -111,6 +118,7 @@ enum SubscriptionTier: String, CaseIterable {
                 "5–45 minute sessions",
                 "Session history",
                 "Core breathing guide",
+                "Ambient soundscapes",
                 "Enhanced haptics"
             ]
         case .master:
@@ -120,7 +128,8 @@ enum SubscriptionTier: String, CaseIterable {
                 "Custom breathing patterns",
                 "Guided breath holds",
                 "Advanced haptic patterns",
-                "Apple Watch companion"
+                "Apple Watch companion",
+                "Nature soundscapes"
             ]
         }
     }

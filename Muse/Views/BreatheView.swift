@@ -1,15 +1,20 @@
 import SwiftUI
+import WatchConnectivity
 
 struct BreatheView: View {
     @State private var sessionManager = BreathingSessionManager()
     @State private var subscriptionManager = SubscriptionManager.shared
     @State private var historyManager = SessionHistoryManager.shared
     @State private var patternManager = BreathingPatternManager.shared
+    @State private var sessionTypeManager = SessionTypeManager.shared
+    @State private var soundscapeManager = SoundscapeManager.shared
+
     @State private var showSettings = false
     @State private var showPricing = false
     @State private var showHistory = false
     @State private var showDurationPicker = false
     @State private var showPatternSelection = false
+    @State private var showSoundMixer = false
     @State private var selectedMinutes: Int = 10
     @State private var showCompletionCard = false
     @State private var showInterrupted = false
@@ -18,6 +23,7 @@ struct BreatheView: View {
     @State private var completedCycles: Int = 0
 
     @State private var displayDuration: Int = 10
+    @State private var watchSessionManager = iPhoneWatchSessionManager.shared
     @State private var sessionStartTime: Date?
     @State private var timer: Timer?
     @State private var previousPhase: BreathPhase = .idle
@@ -25,9 +31,13 @@ struct BreatheView: View {
 
     private let hapticService = HapticService.shared
 
+    private var sessionType: SessionType {
+        sessionTypeManager.selectedType
+    }
+
     var body: some View {
         ZStack {
-            Color(hex: "050508")
+            Color(hex: sessionType.backgroundHex)
                 .ignoresSafeArea()
 
             VStack(spacing: 0) {
@@ -45,17 +55,15 @@ struct BreatheView: View {
 
                     Spacer()
 
-                    // Pattern indicator (tappable if Master)
+                    // Session type indicator (tappable to switch)
                     Button {
-                        if subscriptionManager.currentTier.hasCustomBreathingPatterns ||
-                           !patternManager.customPatterns.isEmpty {
-                            showPatternSelection = true
-                        }
+                        cycleSessionType()
                     } label: {
                         HStack(spacing: 6) {
-                            Image(systemName: "wind")
-                                .font(.system(size: 12))
-                            Text(patternManager.selectedPattern.name)
+                            Circle()
+                                .fill(Color(hex: sessionType.orbCoreColor))
+                                .frame(width: 6, height: 6)
+                            Text(sessionType.displayName)
                                 .font(.system(size: 12, weight: .medium))
                         }
                         .foregroundStyle(Color(hex: "6b6560"))
@@ -87,7 +95,8 @@ struct BreatheView: View {
                 } label: {
                     OrbView(
                         phase: sessionManager.session.phase,
-                        phaseProgress: sessionManager.session.phaseProgress
+                        phaseProgress: sessionManager.session.phaseProgress,
+                        sessionType: sessionType
                     )
                     .frame(maxWidth: .infinity)
                     .frame(height: 360)
@@ -96,6 +105,21 @@ struct BreatheView: View {
                 .buttonStyle(PlainButtonStyle())
                 .disabled(sessionManager.session.phase == .complete)
 
+                // Breath guide (shown during active session)
+                if sessionManager.session.isActive {
+                    BreathGuideView(
+                        phase: sessionManager.session.phase,
+                        phaseProgress: sessionManager.session.phaseProgress,
+                        sessionType: sessionType
+                    )
+                    .padding(.top, 16)
+                    .transition(.opacity.combined(with: .move(edge: .top)))
+                } else {
+                    // Session type picker (shown when idle)
+                    SessionTypePicker(selectedType: $sessionTypeManager.selectedType, isCompact: false)
+                        .padding(.top, 16)
+                }
+
                 Spacer()
 
                 // Duration / Timer display
@@ -103,12 +127,12 @@ struct BreatheView: View {
                     if sessionManager.session.isActive {
                         Text(sessionManager.formattedRemainingTime)
                             .font(.system(size: 72, weight: .light, design: .rounded))
-                            .foregroundStyle(Color(hex: "e8d5c4"))
+                            .foregroundStyle(Color(hex: sessionType.orbCoreColor).opacity(0.85))
                             .monospacedDigit()
                     } else {
                         Text("\(displayDuration)")
                             .font(.system(size: 72, weight: .light, design: .rounded))
-                            .foregroundStyle(Color(hex: "e8d5c4"))
+                            .foregroundStyle(Color(hex: sessionType.orbCoreColor).opacity(0.85))
                             .contentShape(Rectangle())
                             .onTapGesture {
                                 if !sessionManager.session.isActive {
@@ -122,10 +146,26 @@ struct BreatheView: View {
                             .font(.system(size: 13))
                             .foregroundStyle(Color(hex: "6b6560"))
                     } else {
-                        Text(phaseLabel)
-                            .font(.system(size: 15, weight: .medium))
-                            .foregroundStyle(Color(hex: "6b6560").opacity(0.8))
+                        Text(patternManager.selectedPattern.name)
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundStyle(Color(hex: "6b6560").opacity(0.6))
                             .animation(.easeInOut(duration: 0.3), value: sessionManager.session.phase)
+                    }
+
+                    // Sound mixer button (Master tier)
+                    if !sessionManager.session.isActive && subscriptionManager.currentTier.hasSoundscapes {
+                        Button {
+                            showSoundMixer = true
+                        } label: {
+                            HStack(spacing: 4) {
+                                Image(systemName: soundscapeManager.isPlaying ? "speaker.wave.2.fill" : "speaker.wave.2")
+                                    .font(.system(size: 11))
+                                Text(soundscapeManager.isPlaying ? soundscapeManager.activeSoundscape?.displayName ?? "Soundscape" : "Add sound")
+                                    .font(.system(size: 12))
+                            }
+                            .foregroundStyle(Color(hex: "6b6560").opacity(0.6))
+                        }
+                        .padding(.top, 4)
                     }
                 }
                 .padding(.bottom, 60)
@@ -136,6 +176,7 @@ struct BreatheView: View {
                 SessionCompleteCard(
                     minutes: selectedMinutes,
                     cyclesCompleted: completedCycles,
+                    sessionType: sessionType,
                     onDismiss: resetSession
                 )
             }
@@ -177,6 +218,11 @@ struct BreatheView: View {
         .sheet(isPresented: $showPatternSelection) {
             PatternSelectionView()
         }
+        .sheet(isPresented: $showSoundMixer) {
+            SoundMixerView()
+                .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
+        }
         .confirmationDialog("Select Duration", isPresented: $showDurationPicker, titleVisibility: .visible) {
             ForEach(subscriptionManager.availableDurations, id: \.self) { duration in
                 Button("\(duration) min") {
@@ -198,20 +244,13 @@ struct BreatheView: View {
                 resetSession()
             }
         }
+        .onChange(of: sessionTypeManager.selectedType) { _, newType in
+            if !sessionManager.session.isActive {
+                applySelectedPattern()
+            }
+        }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
             handleAppBackground()
-        }
-    }
-
-    // MARK: - Computed
-
-    private var phaseLabel: String {
-        switch sessionManager.session.phase {
-        case .inhale: return "breathe in"
-        case .holdIn: return "hold"
-        case .exhale: return "breathe out"
-        case .holdOut: return "hold"
-        default: return ""
         }
     }
 
@@ -227,6 +266,14 @@ struct BreatheView: View {
 
     private func applySelectedPattern() {
         sessionManager.applyPattern(patternManager.selectedPattern)
+    }
+
+    private func cycleSessionType() {
+        let allCases = SessionType.allCases
+        if let index = allCases.firstIndex(of: sessionTypeManager.selectedType) {
+            let nextIndex = (index + 1) % allCases.count
+            sessionTypeManager.selectedType = allCases[nextIndex]
+        }
     }
 
     private func startSession() {
@@ -252,6 +299,16 @@ struct BreatheView: View {
         previousPhase = .inhale
         completedCycles = 0
         hapticService.playInhale()
+
+        // Start soundscape if enabled
+        if subscriptionManager.currentTier.hasSoundscapes {
+            soundscapeManager.startIfConfigured()
+        }
+
+        // Send update to watch
+        if watchSessionManager.isWatchPaired && subscriptionManager.currentTier.hasAppleWatchCompanion {
+            watchSessionManager.sendSessionUpdate(session: sessionManager.session, sessionType: sessionType)
+        }
 
         timer = Timer.scheduledTimer(withTimeInterval: 1.0 / 60.0, repeats: true) { _ in
             guard let start = sessionStartTime else { return }
@@ -282,6 +339,7 @@ struct BreatheView: View {
                 timer?.invalidate()
                 timer = nil
                 hapticService.playSessionComplete()
+                soundscapeManager.stop()
 
                 // Record in history if tier supports it
                 if subscriptionManager.currentTier.hasSessionHistory {
@@ -309,6 +367,12 @@ struct BreatheView: View {
         sessionManager.stop()
         sessionStartTime = nil
         previousPhase = .idle
+        soundscapeManager.stop()
+
+        // Send session end to watch
+        if watchSessionManager.isWatchPaired && subscriptionManager.currentTier.hasAppleWatchCompanion {
+            watchSessionManager.sendSessionUpdate(session: sessionManager.session, sessionType: sessionType)
+        }
     }
 
     private func resumeSession() {

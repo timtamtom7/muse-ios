@@ -38,17 +38,20 @@ struct BreathingPatternVisualizerView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             // Phase labels
-            HStack(spacing: 0) {
-                ForEach(0..<4, id: \.self) { i in
-                    if phaseWidths[i] > 0 {
-                        Text(phases[i].name)
-                            .font(.system(size: 10, weight: .medium))
-                            .foregroundStyle(phases[i].color.opacity(0.7))
-                            .frame(width: max(20, CGFloat(phaseWidths[i]) * (UIScreen.main.bounds.width - 64)), alignment: .leading)
-                            .lineLimit(1)
+            GeometryReader { geo in
+                HStack(spacing: 0) {
+                    ForEach(0..<4, id: \.self) { i in
+                        if phaseWidths[i] > 0 {
+                            Text(phases[i].name)
+                                .font(.system(size: 10, weight: .medium))
+                                .foregroundStyle(phases[i].color.opacity(0.7))
+                                .frame(width: max(20, CGFloat(phaseWidths[i]) * (geo.size.width - 8)), alignment: .leading)
+                                .lineLimit(1)
+                        }
                     }
                 }
             }
+            .frame(height: 16)
             .padding(.horizontal, 4)
 
             // Timeline bar
@@ -83,16 +86,19 @@ struct BreathingPatternVisualizerView: View {
             .frame(height: 24)
 
             // Duration labels
-            HStack(spacing: 0) {
-                ForEach(0..<4, id: \.self) { i in
-                    if phaseWidths[i] > 0 {
-                        Text(phaseDurationLabel(i))
-                            .font(.system(size: 9, weight: .light))
-                            .foregroundStyle(phases[i].color.opacity(0.5))
-                            .frame(width: max(20, CGFloat(phaseWidths[i]) * (UIScreen.main.bounds.width - 64)), alignment: .leading)
+            GeometryReader { geo in
+                HStack(spacing: 0) {
+                    ForEach(0..<4, id: \.self) { i in
+                        if phaseWidths[i] > 0 {
+                            Text(phaseDurationLabel(i))
+                                .font(.system(size: 9, weight: .light))
+                                .foregroundStyle(phases[i].color.opacity(0.5))
+                                .frame(width: max(20, CGFloat(phaseWidths[i]) * (geo.size.width - 8)), alignment: .leading)
+                        }
                     }
                 }
             }
+            .frame(height: 14)
             .padding(.horizontal, 4)
         }
     }
