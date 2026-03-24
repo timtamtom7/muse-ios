@@ -53,6 +53,7 @@
 		9D90BB884685E847D8CD4146 /* BreathingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSession.swift; sourceTree = "<group>"; };
 		9FD9ED51CF4BFB54B18FEE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD57997FF06CBA85FBAEE465 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		AFE2722D11A443C7DE00A292 /* MuseWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MuseWatch.entitlements; sourceTree = "<group>"; };
 		BBF79DE842A1D2F5CD15B24F /* SoundMixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMixerView.swift; sourceTree = "<group>"; };
 		BC19E4BC618EC6F5DCBECB53 /* Muse.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Muse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03531561490649BA35082E6 /* MuseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseApp.swift; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				9FD9ED51CF4BFB54B18FEE1B /* Assets.xcassets */,
 				7BB40AE779D0213979FA206A /* ContentView.swift */,
 				2F268D96377FC8557A689C4E /* Info.plist */,
+				AFE2722D11A443C7DE00A292 /* MuseWatch.entitlements */,
 				46B04D612BE8A12071F28264 /* MuseWatchApp.swift */,
 				58DA8724BF463AC3BFFC6319 /* WatchOrbView.swift */,
 			);
