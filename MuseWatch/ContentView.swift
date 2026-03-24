@@ -23,7 +23,7 @@ struct ContentView: View {
                     Circle()
                         .fill(Color(hex: sessionManager.sessionType.orbCoreColor))
                         .frame(width: 4, height: 4)
-                    Text(sessionManager.sessionType.displayName)
+                    Text(sessionManager.sessionType.rawValue)
                         .font(.system(size: 9, weight: .medium))
                         .foregroundStyle(Color(hex: "6b6560"))
                 }
