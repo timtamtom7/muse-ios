@@ -1,0 +1,88 @@
+/* Simplified Chinese localization for Muse */
+"app.name" = "Muse";
+"tab.play" = "播放";
+"tab.pause" = "暂停";
+"tab.library" = "库";
+"tab.settings" = "设置";
+"tab.subscription" = "订阅";
+"tab.upgrade" = "升级";
+"tab.ai_insights" = "AI分析";
+"tab.soundscapes" = "声景";
+"tab.session_history" = "历史记录";
+"tab.community_patterns" = "社区模式";
+
+/* Breathing Patterns */
+"pattern.select" = "选择一个模式";
+"pattern.create_custom" = "创建自定义模式";
+"pattern.custom" = "自定义";
+"pattern.presets" = "预设";
+"pattern.adaptive" = "自适应模式";
+"pattern.name" = "模式名称";
+"pattern.description" = "描述";
+"pattern.tags" = "标签";
+"pattern.popular_tags" = "热门标签";
+"pattern.to_share" = "要分享的模式";
+
+/* Breathing Phases */
+"phase.inhale" = "吸气";
+"phase.exhale" = "呼气";
+"phase.hold_in" = "屏气（吸气后）";
+"phase.hold_out" = "屏气（呼气后）";
+"phase.pause" = "下一次呼吸前暂停";
+
+/* Session */
+"session.start" = "点击时间进行调整 · 点击球体开始";
+"session.how_it_works" = "如何使用";
+"session.resume" = "继续";
+"session.skip" = "跳过";
+"session.cancel" = "取消";
+"session.continue" = "仍然继续";
+"session.discard" = "放弃";
+"session.save" = "保存";
+"session.next" = "下一步";
+
+/* Settings */
+"settings.master_volume" = "主音量";
+"settings.haptic_feedback" = "触感反馈";
+"settings.reminder" = "每日提醒";
+"settings.reminder_time" = "提醒时间";
+"settings.reminder_description" = "每天收到轻柔的提醒来呼吸。";
+"settings.notifications_blocked" = "通知已被阻止。请在设置 > Muse > 通知中启用。";
+"settings.open_settings" = "打开设置";
+"settings.feedback" = "反馈";
+"settings.beta_program" = "Beta测试计划";
+
+/* Subscription */
+"subscription.upgrade" = "升级";
+"subscription.manage" = "管理订阅";
+"subscription.description" = "订阅管理可通过Apple ID设置进行。";
+"subscription.see_plans" = "查看计划";
+
+/* AI Insights */
+"ai_insights.refresh" = "刷新分析";
+"ai.insights.title" = "AI分析";
+
+/* Streaks */
+"streak.best" = "最佳";
+"streak.alive" = "今天呼吸来保持它";
+"streak.at_risk" = "连续记录有风险";
+"streak.broken" = "连续记录已断开";
+"streak.start_new" = "今天开始新的连续记录";
+"streak.longest" = "最长: %d天";
+
+/* Onboarding */
+"onboarding.maybe_later" = "也许稍后";
+"onboarding.import" = "导入";
+
+/* Beta */
+"beta.title" = "Beta测试计划";
+"beta.version" = "版本 %@";
+"beta.build" = "构建 %@";
+
+/* General */
+"general.close" = "关闭";
+"general.done" = "完成";
+"general.error" = "错误";
+"general.ok" = "好";
+"general.loading" = "加载中...";
+"general.no_data" = "暂无数据";

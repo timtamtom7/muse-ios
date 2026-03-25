@@ -1,0 +1,88 @@
+/* Spanish localization for Muse */
+"app.name" = "Muse";
+"tab.play" = "Reproducir";
+"tab.pause" = "Pausar";
+"tab.library" = "Biblioteca";
+"tab.settings" = "Ajustes";
+"tab.subscription" = "Suscripción";
+"tab.upgrade" = "Mejorar";
+"tab.ai_insights" = "Perspectivas de IA";
+"tab.soundscapes" = "Paisajes sonoros";
+"tab.session_history" = "Historial de sesiones";
+"tab.community_patterns" = "Patrones de la comunidad";
+
+/* Breathing Patterns */
+"pattern.select" = "Selecciona un patrón";
+"pattern.create_custom" = "Crear patrón personalizado";
+"pattern.custom" = "Personalizado";
+"pattern.presets" = "Preajustes";
+"pattern.adaptive" = "Patrón adaptativo";
+"pattern.name" = "Nombre del patrón";
+"pattern.description" = "Descripción";
+"pattern.tags" = "Etiquetas";
+"pattern.popular_tags" = "Etiquetas populares";
+"pattern.to_share" = "Patrón para compartir";
+
+/* Breathing Phases */
+"phase.inhale" = "Inhalar";
+"phase.exhale" = "Exhalar";
+"phase.hold_in" = "Retener (entrada)";
+"phase.hold_out" = "Retener (salida)";
+"phase.pause" = "Pausa antes de la siguiente respiración";
+
+/* Session */
+"session.start" = "Toca el tiempo para ajustar · toca el orbe para comenzar";
+"session.how_it_works" = "Cómo funciona";
+"session.resume" = "Continuar";
+"session.skip" = "Omitir";
+"session.cancel" = "Cancelar";
+"session.continue" = "Continuar de todos modos";
+"session.discard" = "Descartar";
+"session.save" = "Guardar";
+"session.next" = "Siguiente";
+
+/* Settings */
+"settings.master_volume" = "Volumen principal";
+"settings.haptic_feedback" = "Retroalimentación háptica";
+"settings.reminder" = "Recordatorio diario";
+"settings.reminder_time" = "Hora del recordatorio";
+"settings.reminder_description" = "Recibe una suave notificación cada día para respirar.";
+"settings.notifications_blocked" = "Las notificaciones están bloqueadas. Habilítalas en Ajustes > Muse > Notificaciones.";
+"settings.open_settings" = "Abrir Ajustes";
+"settings.feedback" = "Comentarios";
+"settings.beta_program" = "Programa Beta";
+
+/* Subscription */
+"subscription.upgrade" = "Mejorar";
+"subscription.manage" = "Gestionar suscripción";
+"subscription.description" = "La gestión de suscripciones está disponible en los ajustes de tu Apple ID.";
+"subscription.see_plans" = "Ver planes";
+
+/* AI Insights */
+"ai_insights.refresh" = "Actualizar perspectivas";
+"ai.insights.title" = "Perspectivas de IA";
+
+/* Streaks */
+"streak.best" = "Mejor";
+"streak.alive" = "Respira hoy para mantenerlo vivo";
+"streak.at_risk" = "Racha en riesgo";
+"streak.broken" = "Racha rota";
+"streak.start_new" = "Comienza una nueva racha hoy";
+"streak.longest" = "Más larga: %d días";
+
+/* Onboarding */
+"onboarding.maybe_later" = "Quizás más tarde";
+"onboarding.import" = "Importar";
+
+/* Beta */
+"beta.title" = "Programa Beta";
+"beta.version" = "Versión %@";
+"beta.build" = "Compilación %@";
+
+/* General */
+"general.close" = "Cerrar";
+"general.done" = "Hecho";
+"general.error" = "Error";
+"general.ok" = "OK";
+"general.loading" = "Cargando...";
+"general.no_data" = "No hay datos disponibles";

@@ -1,0 +1,88 @@
+/* Brazilian Portuguese localization for Muse */
+"app.name" = "Muse";
+"tab.play" = "Reproduzir";
+"tab.pause" = "Pausar";
+"tab.library" = "Biblioteca";
+"tab.settings" = "Configurações";
+"tab.subscription" = "Assinatura";
+"tab.upgrade" = "Melhorar";
+"tab.ai_insights" = "Insights de IA";
+"tab.soundscapes" = "Paisagens sonoras";
+"tab.session_history" = "Histórico de sessões";
+"tab.community_patterns" = "Padrões da comunidade";
+
+/* Breathing Patterns */
+"pattern.select" = "Selecione um padrão";
+"pattern.create_custom" = "Criar padrão personalizado";
+"pattern.custom" = "Personalizado";
+"pattern.presets" = "Predefinições";
+"pattern.adaptive" = "Padrão adaptativo";
+"pattern.name" = "Nome do padrão";
+"pattern.description" = "Descrição";
+"pattern.tags" = "Tags";
+"pattern.popular_tags" = "Tags populares";
+"pattern.to_share" = "Padrão para compartilhar";
+
+/* Breathing Phases */
+"phase.inhale" = "Inspire";
+"phase.exhale" = "Expire";
+"phase.hold_in" = "Segure (entrada)";
+"phase.hold_out" = "Segure (saída)";
+"phase.pause" = "Pausa antes da próxima respiração";
+
+/* Session */
+"session.start" = "Toque no tempo para ajustar · toque na orbe para começar";
+"session.how_it_works" = "Como funciona";
+"session.resume" = "Continuar";
+"session.skip" = "Pular";
+"session.cancel" = "Cancelar";
+"session.continue" = "Continuar mesmo assim";
+"session.discard" = "Descartar";
+"session.save" = "Salvar";
+"session.next" = "Próximo";
+
+/* Settings */
+"settings.master_volume" = "Volume principal";
+"settings.haptic_feedback" = "Feedback háptico";
+"settings.reminder" = "Lembrete diário";
+"settings.reminder_time" = "Horário do lembrete";
+"settings.reminder_description" = "Receba um lembrete suave todos os dias para respirar.";
+"settings.notifications_blocked" = "As notificações estão bloqueadas. Ative-as em Configurações > Muse > Notificações.";
+"settings.open_settings" = "Abrir Configurações";
+"settings.feedback" = "Feedback";
+"settings.beta_program" = "Programa Beta";
+
+/* Subscription */
+"subscription.upgrade" = "Melhorar";
+"subscription.manage" = "Gerenciar assinatura";
+"subscription.description" = "O gerenciamento de assinaturas está disponível nas configurações do seu Apple ID.";
+"subscription.see_plans" = "Ver planos";
+
+/* AI Insights */
+"ai_insights.refresh" = "Atualizar insights";
+"ai.insights.title" = "Insights de IA";
+
+/* Streaks */
+"streak.best" = "Melhor";
+"streak.alive" = "Respire hoje para mantê-lo vivo";
+"streak.at_risk" = "Sequência em risco";
+"streak.broken" = "Sequência quebrada";
+"streak.start_new" = "Comece uma nova sequência hoje";
+"streak.longest" = "Mais longa: %d dias";
+
+/* Onboarding */
+"onboarding.maybe_later" = "Talvez mais tarde";
+"onboarding.import" = "Importar";
+
+/* Beta */
+"beta.title" = "Programa Beta";
+"beta.version" = "Versão %@";
+"beta.build" = "Build %@";
+
+/* General */
+"general.close" = "Fechar";
+"general.done" = "Feito";
+"general.error" = "Erro";
+"general.ok" = "OK";
+"general.loading" = "Carregando...";
+"general.no_data" = "Nenhum dado disponível";

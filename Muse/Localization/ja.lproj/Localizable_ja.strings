@@ -1,0 +1,88 @@
+/* Japanese localization for Muse */
+"app.name" = "Muse";
+"tab.play" = "再生";
+"tab.pause" = "一時停止";
+"tab.library" = "ライブラリ";
+"tab.settings" = "設定";
+"tab.subscription" = "サブスクリプション";
+"tab.upgrade" = "アップグレード";
+"tab.ai_insights" = "AI分析";
+"tab.soundscapes" = "サウンドスケープ";
+"tab.session_history" = "セッション履歴";
+"tab.community_patterns" = "コミュニティパターン";
+
+/* Breathing Patterns */
+"pattern.select" = "パターンを選択";
+"pattern.create_custom" = "カスタムパターンを作成";
+"pattern.custom" = "カスタム";
+"pattern.presets" = "プリセット";
+"pattern.adaptive" = "アダプティブパターン";
+"pattern.name" = "パターン名";
+"pattern.description" = "説明";
+"pattern.tags" = "タグ";
+"pattern.popular_tags" = "人気のタグ";
+"pattern.to_share" = "共有するパターン";
+
+/* Breathing Phases */
+"phase.inhale" = "吸う";
+"phase.exhale" = "吐く";
+"phase.hold_in" = "保持（吸気）";
+"phase.hold_out" = "保持（呼気）";
+"phase.pause" = "次の呼吸の前に一時停止";
+
+/* Session */
+"session.start" = "時間をタップして調整 · オーブをタップして開始";
+"session.how_it_works" = "使い方";
+"session.resume" = "再開";
+"session.skip" = "スキップ";
+"session.cancel" = "キャンセル";
+"session.continue" = "それでも続ける";
+"session.discard" = "破棄";
+"session.save" = "保存";
+"session.next" = "次へ";
+
+/* Settings */
+"settings.master_volume" = "マスター音量";
+"settings.haptic_feedback" = "触覚フィードバック";
+"settings.reminder" = "デイリーリマインダー";
+"settings.reminder_time" = "リマインダー時刻";
+"settings.reminder_description" = "毎日呼吸するためのリマインダーを受け取ります。";
+"settings.notifications_blocked" = "通知はブロックされています。設定 > Muse > 通知で有効にしてください。";
+"settings.open_settings" = "設定を開く";
+"settings.feedback" = "フィードバック";
+"settings.beta_program" = "ベータプログラム";
+
+/* Subscription */
+"subscription.upgrade" = "アップグレード";
+"subscription.manage" = "サブスクリプションを管理";
+"subscription.description" = "サブスクリプションの管理はApple ID設定から行えます。";
+"subscription.see_plans" = "プランを見る";
+
+/* AI Insights */
+"ai_insights.refresh" = "分析を更新";
+"ai.insights.title" = "AI分析";
+
+/* Streaks */
+"streak.best" = "最高";
+"streak.alive" = "今日呼吸して続けましょう";
+"streak.at_risk" = "ストリークが危険です";
+"streak.broken" = "ストリークが途切れました";
+"streak.start_new" = "今日から新しいストリークを始めましょう";
+"streak.longest" = "最長: %d日";
+
+/* Onboarding */
+"onboarding.maybe_later" = "後で";
+"onboarding.import" = "インポート";
+
+/* Beta */
+"beta.title" = "ベータプログラム";
+"beta.version" = "バージョン %@";
+"beta.build" = "ビルド %@";
+
+/* General */
+"general.close" = "閉じる";
+"general.done" = "完了";
+"general.error" = "エラー";
+"general.ok" = "OK";
+"general.loading" = "読み込み中...";
+"general.no_data" = "データがありません";

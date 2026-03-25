@@ -1,0 +1,88 @@
+/* Korean localization for Muse */
+"app.name" = "Muse";
+"tab.play" = "재생";
+"tab.pause" = "일시정지";
+"tab.library" = "라이브러리";
+"tab.settings" = "설정";
+"tab.subscription" = "구독";
+"tab.upgrade" = "업그레이드";
+"tab.ai_insights" = "AI 인사이트";
+"tab.soundscapes" = "사운드스케이프";
+"tab.session_history" = "세션 기록";
+"tab.community_patterns" = "커뮤니티 패턴";
+
+/* Breathing Patterns */
+"pattern.select" = "패턴 선택";
+"pattern.create_custom" = "사용자 지정 패턴 만들기";
+"pattern.custom" = "사용자 지정";
+"pattern.presets" = "프리셋";
+"pattern.adaptive" = "적응형 패턴";
+"pattern.name" = "패턴 이름";
+"pattern.description" = "설명";
+"pattern.tags" = "태그";
+"pattern.popular_tags" = "인기 태그";
+"pattern.to_share" = "공유할 패턴";
+
+/* Breathing Phases */
+"phase.inhale" = "흡입";
+"phase.exhale" = "호흡";
+"phase.hold_in" = "보류 (들이쉬기)";
+"phase.hold_out" = "보류 (내쉬기)";
+"phase.pause" = "다음 호흡 전 일시정지";
+
+/* Session */
+"session.start" = "시간을 탭하여 조정 · 오브를 탭하여 시작";
+"session.how_it_works" = "작동 방식";
+"session.resume" = "계속";
+"session.skip" = "건너뛰기";
+"session.cancel" = "취소";
+"session.continue" = "그래도 계속";
+"session.discard" = "버리기";
+"session.save" = "저장";
+"session.next" = "다음";
+
+/* Settings */
+"settings.master_volume" = "마스터 볼륨";
+"settings.haptic_feedback" = "햅틱 피드백";
+"settings.reminder" = "일일 알림";
+"settings.reminder_time" = "알림 시간";
+"settings.reminder_description" = "매일 호흡을 위한 부드러운 알림을 받으세요.";
+"settings.notifications_blocked" = "알림이 차단되어 있습니다. 설정 > Muse > 알림에서 활성화하세요.";
+"settings.open_settings" = "설정 열기";
+"settings.feedback" = "피드백";
+"settings.beta_program" = "베타 프로그램";
+
+/* Subscription */
+"subscription.upgrade" = "업그레이드";
+"subscription.manage" = "구독 관리";
+"subscription.description" = "구독 관리는 Apple ID 설정에서 할 수 있습니다.";
+"subscription.see_plans" = "플랜 보기";
+
+/* AI Insights */
+"ai_insights.refresh" = "인사이트 새로고침";
+"ai.insights.title" = "AI 인사이트";
+
+/* Streaks */
+"streak.best" = "최고";
+"streak.alive" = "오늘 호흡하여 연속 기록을 유지하세요";
+"streak.at_risk" = "연속 기록 위험";
+"streak.broken" = "연속 기록 중단";
+"streak.start_new" = "오늘 새로운 연속 기록 시작";
+"streak.longest" = "최장: %d일";
+
+/* Onboarding */
+"onboarding.maybe_later" = "나중에";
+"onboarding.import" = "가져오기";
+
+/* Beta */
+"beta.title" = "베타 프로그램";
+"beta.version" = "버전 %@";
+"beta.build" = "빌드 %@";
+
+/* General */
+"general.close" = "닫기";
+"general.done" = "완료";
+"general.error" = "오류";
+"general.ok" = "확인";
+"general.loading" = "로딩 중...";
+"general.no_data" = "데이터 없음";

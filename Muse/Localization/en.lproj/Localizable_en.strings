@@ -1,0 +1,88 @@
+/* English localization for Muse */
+"app.name" = "Muse";
+"tab.play" = "Play";
+"tab.pause" = "Pause";
+"tab.library" = "Library";
+"tab.settings" = "Settings";
+"tab.subscription" = "Subscription";
+"tab.upgrade" = "Upgrade";
+"tab.ai_insights" = "AI Insights";
+"tab.soundscapes" = "Soundscapes";
+"tab.session_history" = "Session History";
+"tab.community_patterns" = "Community Patterns";
+
+/* Breathing Patterns */
+"pattern.select" = "Select a pattern";
+"pattern.create_custom" = "Create custom pattern";
+"pattern.custom" = "Custom";
+"pattern.presets" = "Presets";
+"pattern.adaptive" = "Adaptive Pattern";
+"pattern.name" = "Pattern name";
+"pattern.description" = "Description";
+"pattern.tags" = "Tags";
+"pattern.popular_tags" = "Popular tags";
+"pattern.to_share" = "Pattern to share";
+
+/* Breathing Phases */
+"phase.inhale" = "Inhale";
+"phase.exhale" = "Exhale";
+"phase.hold_in" = "Hold (in)";
+"phase.hold_out" = "Hold (out)";
+"phase.pause" = "Pause before next breath";
+
+/* Session */
+"session.start" = "Tap time to adjust · tap orb to begin";
+"session.how_it_works" = "How it works";
+"session.resume" = "Resume";
+"session.skip" = "Skip";
+"session.cancel" = "Cancel";
+"session.continue" = "Continue anyway";
+"session.discard" = "Discard";
+"session.save" = "Save";
+"session.next" = "Next";
+
+/* Settings */
+"settings.master_volume" = "Master Volume";
+"settings.haptic_feedback" = "Haptic Feedback";
+"settings.reminder" = "Daily Reminder";
+"settings.reminder_time" = "Reminder Time";
+"settings.reminder_description" = "Get a gentle nudge each day to breathe.";
+"settings.notifications_blocked" = "Notifications are blocked. Enable them in Settings > Muse > Notifications.";
+"settings.open_settings" = "Open Settings";
+"settings.feedback" = "Feedback";
+"settings.beta_program" = "Beta Program";
+
+/* Subscription */
+"subscription.upgrade" = "Upgrade";
+"subscription.manage" = "Manage Subscription";
+"subscription.description" = "Subscription management is available through your Apple ID settings.";
+"subscription.see_plans" = "See plans";
+
+/* AI Insights */
+"ai_insights.refresh" = "Refresh insights";
+"ai.insights.title" = "AI Insights";
+
+/* Streaks */
+"streak.best" = "Best";
+"streak.alive" = "Breathe today to keep it alive";
+"streak.at_risk" = "Streak at risk";
+"streak.broken" = "Streak broken";
+"streak.start_new" = "Start a new streak today";
+"streak.longest" = "Longest: %d days";
+
+/* Onboarding */
+"onboarding.maybe_later" = "Maybe later";
+"onboarding.import" = "Import";
+
+/* Beta */
+"beta.title" = "Beta Program";
+"beta.version" = "Version %@";
+"beta.build" = "Build %@";
+
+/* General */
+"general.close" = "Close";
+"general.done" = "Done";
+"general.error" = "Error";
+"general.ok" = "OK";
+"general.loading" = "Loading...";
+"general.no_data" = "No data available";
