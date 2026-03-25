@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		030C51C066427EEA670F8396 /* BreathingPatternVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD343657A2FD0D93BE5FA7D /* BreathingPatternVisualizerView.swift */; };
+		087FF1BF1DD1C584BBAB2895 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824D00C8F94FBA05E4969562 /* AnalyticsService.swift */; };
 		1298257D7515C22F46BDCA09 /* AIInsightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9EE260BD928B4392193FF0 /* AIInsightsService.swift */; };
 		13D990EE6DBC8DB7ED73B53D /* OrbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D20E36C03A3188A11786E /* OrbView.swift */; };
 		142ED1C2CEBBE479129FB3F7 /* BreathingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90BB884685E847D8CD4146 /* BreathingSession.swift */; };
@@ -27,6 +28,7 @@
 		787FED9E1646252C8D7C10AA /* WatchOrbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA8724BF463AC3BFFC6319 /* WatchOrbView.swift */; };
 		8E8E2504B2E03DB1FA060B81 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE80C53F730B743DDCBCABC /* ReminderManager.swift */; };
 		92EF47B550EB545ADC2C2D1F /* MuseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03531561490649BA35082E6 /* MuseApp.swift */; };
+		A86BCEC6E1F8927ADFD40A56 /* BetaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DC1BA69A8238B1E3A9536 /* BetaService.swift */; };
 		AF0AA1B32441AE5069C650F1 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8060E375435D0090B808153 /* PricingView.swift */; };
 		C047D932F3DAB321C62E5483 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E10B1A18C4E09C61EE560 /* HapticService.swift */; };
 		D32C74DC887FF317CE9DB4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9ED51CF4BFB54B18FEE1B /* Assets.xcassets */; };
@@ -48,9 +50,11 @@
 		58DA8724BF463AC3BFFC6319 /* WatchOrbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOrbView.swift; sourceTree = "<group>"; };
 		6B6B985C6B539381AE5981E0 /* CommunityPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPatternsView.swift; sourceTree = "<group>"; };
 		79F585A0A4B85250CA5C8F64 /* BreathingPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingPattern.swift; sourceTree = "<group>"; };
+		7A2DC1BA69A8238B1E3A9536 /* BetaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaService.swift; sourceTree = "<group>"; };
 		7A9EE260BD928B4392193FF0 /* AIInsightsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIInsightsService.swift; sourceTree = "<group>"; };
 		7BB40AE779D0213979FA206A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F501779D336B0084E4E66FE /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		824D00C8F94FBA05E4969562 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
 		834F4F70315E2B75900F555A /* PatternSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternSelectionView.swift; sourceTree = "<group>"; };
 		84C4177A1F35F0DE46C57163 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		884019C0E18FD36A6FE5232C /* SoundscapeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeManager.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				7A9EE260BD928B4392193FF0 /* AIInsightsService.swift */,
+				824D00C8F94FBA05E4969562 /* AnalyticsService.swift */,
+				7A2DC1BA69A8238B1E3A9536 /* BetaService.swift */,
 				00C389627A97CD74C472142A /* CommunityPatternsService.swift */,
 				9A7E10B1A18C4E09C61EE560 /* HapticService.swift */,
 				4FE80C53F730B743DDCBCABC /* ReminderManager.swift */,
@@ -288,6 +294,8 @@
 			files = (
 				1298257D7515C22F46BDCA09 /* AIInsightsService.swift in Sources */,
 				E89807E8C663EF5172E2C3B1 /* AIInsightsView.swift in Sources */,
+				087FF1BF1DD1C584BBAB2895 /* AnalyticsService.swift in Sources */,
+				A86BCEC6E1F8927ADFD40A56 /* BetaService.swift in Sources */,
 				F7A140150669753634BACE7A /* BreathGuideView.swift in Sources */,
 				262A81B53F88291DBFAB6908 /* BreatheView.swift in Sources */,
 				48EE47CA9E75D3A12C3E4D4B /* BreathingPattern.swift in Sources */,
