@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00998193128D13FBAFCC9533 /* StreamingIntegrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530B66C5A7054DE12CA6688 /* StreamingIntegrationService.swift */; };
 		030C51C066427EEA670F8396 /* BreathingPatternVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD343657A2FD0D93BE5FA7D /* BreathingPatternVisualizerView.swift */; };
 		087FF1BF1DD1C584BBAB2895 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824D00C8F94FBA05E4969562 /* AnalyticsService.swift */; };
 		1298257D7515C22F46BDCA09 /* AIInsightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9EE260BD928B4392193FF0 /* AIInsightsService.swift */; };
@@ -27,6 +28,7 @@
 		445E56999EF6C3373F5CD265 /* Localizable_es.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3D90C0D678F5426D940F43A /* Localizable_es.strings */; };
 		48EE47CA9E75D3A12C3E4D4B /* BreathingPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F585A0A4B85250CA5C8F64 /* BreathingPattern.swift */; };
 		63FD0B158939F97C911FB904 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB40AE779D0213979FA206A /* ContentView.swift */; };
+		6549AF16C3379219CC4A736B /* ShortcutsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F7EF53CF4B2098307E1FA /* ShortcutsService.swift */; };
 		68B39B87806C333D2ADC5D7C /* Localizable_en.strings in Resources */ = {isa = PBXBuildFile; fileRef = 050339184726A4F022491AC2 /* Localizable_en.strings */; };
 		721287A8E37CE5BD68873E64 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4744923465160036E01665 /* SubscriptionManager.swift */; };
 		7262818F7690FAC22AF577B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DF6F0098983064DBC362F0 /* Assets.xcassets */; };
@@ -53,6 +55,7 @@
 /* Begin PBXFileReference section */
 		00C389627A97CD74C472142A /* CommunityPatternsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPatternsService.swift; sourceTree = "<group>"; };
 		03A307BE7415C60BA5025F09 /* SessionHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHistoryManager.swift; sourceTree = "<group>"; };
+		0E9F7EF53CF4B2098307E1FA /* ShortcutsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsService.swift; sourceTree = "<group>"; };
 		25D253F09768437212D07FDD /* Localizable_ja.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable_ja.strings; path = ja.lproj/Localizable_ja.strings; sourceTree = "<group>"; };
 		2F268D96377FC8557A689C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		31678C47600A8B6F3188FA34 /* Localizable_fr.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable_fr.strings; path = fr.lproj/Localizable_fr.strings; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		C61DFFA06EC5FD4E48E51366 /* BreatheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheView.swift; sourceTree = "<group>"; };
 		C98EDEDC6BCE515B8F4C1F3E /* BreathGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathGuideView.swift; sourceTree = "<group>"; };
 		CD4744923465160036E01665 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		D530B66C5A7054DE12CA6688 /* StreamingIntegrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingIntegrationService.swift; sourceTree = "<group>"; };
 		DAD343657A2FD0D93BE5FA7D /* BreathingPatternVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingPatternVisualizerView.swift; sourceTree = "<group>"; };
 		DD11A6225E037E9C6D5540E1 /* AppStoreDescription.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AppStoreDescription.md; sourceTree = "<group>"; };
 		E6331B7BDAD97770FC174ACD /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
@@ -161,7 +165,9 @@
 				9A7E10B1A18C4E09C61EE560 /* HapticService.swift */,
 				4FE80C53F730B743DDCBCABC /* ReminderManager.swift */,
 				03A307BE7415C60BA5025F09 /* SessionHistoryManager.swift */,
+				0E9F7EF53CF4B2098307E1FA /* ShortcutsService.swift */,
 				884019C0E18FD36A6FE5232C /* SoundscapeManager.swift */,
+				D530B66C5A7054DE12CA6688 /* StreamingIntegrationService.swift */,
 				CD4744923465160036E01665 /* SubscriptionManager.swift */,
 			);
 			path = Services;
@@ -367,8 +373,10 @@
 				75B25E95577E956C19E6F8CF /* SessionHistoryView.swift in Sources */,
 				D73FC0ACC4EDC7FEDE08EED4 /* SessionType.swift in Sources */,
 				2D4991695563B5E3E08D8659 /* SettingsView.swift in Sources */,
+				6549AF16C3379219CC4A736B /* ShortcutsService.swift in Sources */,
 				E99A1D88F407466964340908 /* SoundMixerView.swift in Sources */,
 				29D0ED862B50C28EDFF7C695 /* SoundscapeManager.swift in Sources */,
+				00998193128D13FBAFCC9533 /* StreamingIntegrationService.swift in Sources */,
 				721287A8E37CE5BD68873E64 /* SubscriptionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
