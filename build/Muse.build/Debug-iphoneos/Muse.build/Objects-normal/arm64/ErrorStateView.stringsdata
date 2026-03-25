@@ -1,0 +1,264 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/ErrorStateView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Haptics unavailable",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "This device doesn't support haptic feedback. The session will continue without tactile cues.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Continue anyway",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Session interrupted",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "You breathed for %lld minute%@. That's a start.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Discard",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resume",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily limit reached",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "You've used all 5 free sessions today. Upgrade to Practice or Master for unlimited breathing.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "See plans",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld minutes unavailable",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your current plan supports sessions up to %lld minutes. Upgrade to unlock longer sessions.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 219
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade plan",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 229
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld breath cycles",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 289
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld minutes",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "of presence",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 283
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 297
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications disabled",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 381
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily reminders require notifications. Enable them in Settings, or breathe without reminders.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 385
+        }
+      },
+      {
+        "comment": "",
+        "key": "Skip",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 395
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 406
+        }
+      },
+      {
+        "comment": "",
+        "key": "Couldn't save pattern",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 463
+        }
+      },
+      {
+        "comment": "",
+        "key": "Something went wrong saving your custom breathing pattern. Please try again.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 467
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 477
+        }
+      },
+      {
+        "comment": "",
+        "key": "Try again",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 489
+        }
+      },
+      {
+        "comment": "",
+        "key": "Apple Watch not paired",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 559
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pair your Apple Watch in the Watch app to use it as a companion during breathing sessions.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 563
+        }
+      },
+      {
+        "comment": "",
+        "key": "Got it",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 572
+        }
+      },
+      {
+        "comment": "",
+        "key": "Couldn't load sound",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 630
+        }
+      },
+      {
+        "comment": "",
+        "key": "The soundscape \"%@\" couldn't be loaded. The audio file may be missing or corrupted.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 634
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 644
+        }
+      },
+      {
+        "comment": "",
+        "key": "Try again",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 656
+        }
+      }
+    ]
+  },
+  "version": 1
+}

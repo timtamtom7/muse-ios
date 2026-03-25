@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/muse-ios/Muse/Models/BreathingSession.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/CommunityPatternsService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/CommunityPatternsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.swiftdeps"
+  }
+}

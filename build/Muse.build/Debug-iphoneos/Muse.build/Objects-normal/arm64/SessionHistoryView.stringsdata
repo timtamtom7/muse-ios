@@ -1,0 +1,144 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/SessionHistoryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "History",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear History",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear All",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "This cannot be undone.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Streak broken",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start a new streak today",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "Streak at risk",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Breathe today to keep it alive",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld-day streak",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Longest: %lld days",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recent Sessions",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld min",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 266
+        }
+      },
+      {
+        "comment": "",
+        "key": "·",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 271
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld cycles",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 292
+        }
+      },
+      {
+        "comment": "",
+        "key": "See plans",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 323
+        }
+      }
+    ]
+  },
+  "version": 1
+}

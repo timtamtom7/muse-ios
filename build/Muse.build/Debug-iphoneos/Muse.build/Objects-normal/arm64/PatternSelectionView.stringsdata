@@ -1,0 +1,152 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/PatternSelectionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Breathing Pattern",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "Presets",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Custom",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create custom pattern",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Custom patterns",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "See plans",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit pattern",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "New pattern",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cannot save",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 288
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pattern name",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "e.g. Morning calm",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 216
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 280
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 289
+        }
+      },
+      {
+        "comment": "",
+        "key": "skip",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 328
+        }
+      },
+      {
+        "comment": "",
+        "key": "%llds",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 328
+        }
+      }
+    ]
+  },
+  "version": 1
+}

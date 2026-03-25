@@ -1,0 +1,259 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/Muse-primary.dia",
+    "emit-module-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/Muse-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/Muse-primary-emit-module.dia",
+    "pch" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/Muse-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/Muse-primary.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/App/MuseApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Models/BreathingPattern.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Models/BreathingSession.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingSession~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Models/SessionType.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionType~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/AIInsightsService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/CommunityPatternsService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/HapticService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/ReminderManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ReminderManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/SessionHistoryManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/SoundscapeManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundscapeManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/SubscriptionManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SubscriptionManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/AIInsightsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/AIInsightsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/BreathGuideView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathGuideView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/BreatheView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/BreathingPatternVisualizerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/CommunityPatternsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/CommunityPatternsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/ErrorStateView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/OnboardingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/OrbView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/PatternSelectionView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/PricingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PricingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/SessionHistoryView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SessionHistoryView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/SettingsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/SoundMixerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/SoundMixerView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

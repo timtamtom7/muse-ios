@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/muse-ios/Muse/App/MuseApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/MuseApp.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Services/HapticService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/HapticService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/ErrorStateView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/ErrorStateView.swiftdeps"
+  }
+}

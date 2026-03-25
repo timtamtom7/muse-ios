@@ -1,0 +1,240 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/CommunityPatternsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Community",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "Import Pattern",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 122
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search patterns, tags...",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Import",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Import \"%@\" by %@?",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "No shared patterns yet",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 166
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share your favorite breathing patterns with the community.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 170
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share a pattern",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "by %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 216
+        }
+      },
+      {
+        "comment": "",
+        "key": "Import",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 240
+        }
+      },
+      {
+        "comment": "",
+        "key": "—",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 294
+        }
+      },
+      {
+        "comment": "",
+        "key": "%llds",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 294
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share Pattern",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 448
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cannot share",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 468
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pattern to share",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 326
+        }
+      },
+      {
+        "comment": "",
+        "key": "In %llds · Out %llds",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 337
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select a pattern",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 365
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 381
+        }
+      },
+      {
+        "comment": "",
+        "key": "What makes this pattern special?",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 385
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tags",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 399
+        }
+      },
+      {
+        "comment": "",
+        "key": "e.g. sleep, focus, beginner (comma separated)",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "Popular tags",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 417
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 452
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 460
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 469
+        }
+      },
+      {
+        "comment": "",
+        "key": "Please select a pattern to share.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 471
+        }
+      }
+    ]
+  },
+  "version": 1
+}

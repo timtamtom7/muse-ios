@@ -1,0 +1,256 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Notifications Blocked",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 307
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 277
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld min",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Default Duration",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Reminder",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reminder Time",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reminders",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 127
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications are blocked. Enable them in Settings > Muse > Notifications.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "Get a gentle nudge each day to breathe.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Haptic Feedback",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "Feedback",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "Session History",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Community Patterns",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI Insights",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 199
+        }
+      },
+      {
+        "comment": "",
+        "key": "Library",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "How it works",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open the app, choose your duration and breathing pattern, then tap the orb to begin. Breathe in as the orb expands, breathe out as it contracts. Each cycle varies by pattern — box breathing is 4-4-4-4. When time is up, the orb fades and a gentle haptic marks the end.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "About",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "Manage Subscription",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 242
+        }
+      },
+      {
+        "comment": "",
+        "key": "Subscription management is available through your Apple ID settings.",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 246
+        }
+      },
+      {
+        "comment": "",
+        "key": "Subscription",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 252
+        }
+      },
+      {
+        "comment": "",
+        "key": "Muse",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version 1.0",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 266
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 281
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Settings",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 308
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 313
+        }
+      },
+      {
+        "comment": "",
+        "key": "Please enable notifications for Muse in Settings > Notifications to receive daily reminders.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 315
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reminder Time",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 342
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 354
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 366
+        }
+      }
+    ]
+  },
+  "version": 1
+}

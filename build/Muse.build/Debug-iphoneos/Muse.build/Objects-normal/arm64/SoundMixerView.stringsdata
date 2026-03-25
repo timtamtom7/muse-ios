@@ -1,0 +1,80 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/SoundMixerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Soundscapes",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unlock %@ tier",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Soundscapes",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Master Volume",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 162
+        }
+      },
+      {
+        "comment": "",
+        "key": "Soundscapes like %@ ones are available with the %@ subscription.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 164
+        }
+      }
+    ]
+  },
+  "version": 1
+}

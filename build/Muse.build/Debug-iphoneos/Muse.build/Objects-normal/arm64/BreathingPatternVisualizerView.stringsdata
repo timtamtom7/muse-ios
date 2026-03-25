@@ -1,0 +1,40 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/BreathingPatternVisualizerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%llds in",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "%llds hold",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "%llds out",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 162
+        }
+      },
+      {
+        "comment": "",
+        "key": "%llds hold",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 164
+        }
+      }
+    ]
+  },
+  "version": 1
+}

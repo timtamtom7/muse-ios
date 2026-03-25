@@ -1,0 +1,48 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/PricingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Choose your practice",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start free. Grow when you're ready.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel anytime. No refunds required.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Maybe later",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Best",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 90
+        }
+      }
+    ]
+  },
+  "version": 1
+}

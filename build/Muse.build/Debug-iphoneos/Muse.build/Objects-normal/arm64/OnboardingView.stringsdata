@@ -1,0 +1,112 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/OnboardingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Next",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Just breathe.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "No playlists. No narrations. No backgrounds of rainforests. Just an orb, your breath, and a few quiet minutes.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 152
+        }
+      },
+      {
+        "comment": "",
+        "key": "Follow the orb.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "The orb expands — breathe in. It contracts — breathe out. Each cycle is 12 seconds. You don't time it, you feel it.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "inhale",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "hold",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 271
+        }
+      },
+      {
+        "comment": "",
+        "key": "exhale",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 280
+        }
+      },
+      {
+        "comment": "",
+        "key": "Feel the difference.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 347
+        }
+      },
+      {
+        "comment": "",
+        "key": "The research is decades old. The practice is ancient. The results are yours in minutes.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 351
+        }
+      },
+      {
+        "comment": "",
+        "key": "Breathe.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 410
+        }
+      },
+      {
+        "comment": "",
+        "key": "That's all. Just start.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 414
+        }
+      },
+      {
+        "comment": "",
+        "key": "Begin",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 421
+        }
+      }
+    ]
+  },
+  "version": 1
+}

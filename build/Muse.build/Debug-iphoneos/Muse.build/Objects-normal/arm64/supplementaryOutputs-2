@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/muse-ios/Muse/Models/BreathingPattern.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPattern.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/BreatheView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreatheView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/BreathingPatternVisualizerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/BreathingPatternVisualizerView.swiftdeps"
+  }
+}

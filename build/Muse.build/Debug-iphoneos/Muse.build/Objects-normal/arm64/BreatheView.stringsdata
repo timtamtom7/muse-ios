@@ -1,0 +1,48 @@
+{
+  "source": "/Users/mauriello/Dev/muse-ios/Muse/Views/BreatheView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Select Duration",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tap time to adjust · tap orb to begin",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld min",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 228
+        }
+      }
+    ]
+  },
+  "version": 1
+}

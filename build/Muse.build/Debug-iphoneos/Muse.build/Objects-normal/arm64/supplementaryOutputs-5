@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/OnboardingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OnboardingView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/OrbView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/OrbView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/muse-ios/Muse/Views/PatternSelectionView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.d",
+    "diagnostics" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.dia",
+    "object" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/muse-ios/build/Muse.build/Debug-iphoneos/Muse.build/Objects-normal/arm64/PatternSelectionView.swiftdeps"
+  }
+}
