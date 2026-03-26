@@ -98,8 +98,10 @@ final class AnalyticsService: ObservableObject {
     // MARK: - Private
 
     private func appendToLog(_ entry: [String: Any]) {
-        let logDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("analytics", isDirectory: true)
+        guard let docsDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            return
+        }
+        let logDir = docsDir.appendingPathComponent("analytics", isDirectory: true)
 
         try? FileManager.default.createDirectory(at: logDir, withIntermediateDirectories: true)
 
