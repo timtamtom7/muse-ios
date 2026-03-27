@@ -76,7 +76,7 @@ struct SoundMixerView: View {
                                 }
                             }
                             .padding(16)
-                            .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 16))
+                            .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.card))
                         }
 
                         // Soundscape grid
@@ -136,7 +136,7 @@ struct SoundMixerView: View {
                             .tint(Color(hex: "e8d5c4"))
                         }
                         .padding(16)
-                        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 12))
+                        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.large))
 
                         Spacer(minLength: 40)
                     }
@@ -178,13 +178,13 @@ struct SoundscapeCard: View {
         Button(action: onTap) {
             VStack(spacing: 8) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10)
+                    RoundedRectangle(cornerRadius: Theme.CornerRadius.medium)
                         .fill(isSelected
                             ? Color(hex: "e8d5c4").opacity(0.12)
                             : Color(hex: "141418"))
                         .frame(height: 80)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 10)
+                            RoundedRectangle(cornerRadius: Theme.CornerRadius.medium)
                                 .stroke(
                                     isSelected
                                         ? Color(hex: "e8d5c4").opacity(0.3)

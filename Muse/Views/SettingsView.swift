@@ -41,6 +41,7 @@ struct SettingsView: View {
                                     .padding(.vertical, 6)
                                     .background(Color(hex: "e8d5c4"), in: Capsule())
                             }
+                            .accessibilityLabel("Upgrade to paid plan")
                         }
                     }
                     .padding(.vertical, 4)
@@ -63,6 +64,7 @@ struct SettingsView: View {
                                 }
                             }
                         }
+                        .accessibilityLabel("\(duration) minute default session")
                     }
                 } header: {
                     Text("Default Duration")
@@ -177,6 +179,7 @@ struct SettingsView: View {
                     }
                     .disabled(!subscriptionManager.currentTier.hasSessionHistory)
                     .opacity(subscriptionManager.currentTier.hasSessionHistory ? 1 : 0.4)
+                    .accessibilityLabel("View session history")
 
                     Button {
                         showCommunity = true
@@ -190,6 +193,7 @@ struct SettingsView: View {
                                 .foregroundStyle(Color(hex: "6b6560").opacity(0.5))
                         }
                     }
+                    .accessibilityLabel("Browse community patterns")
 
                     Button {
                         showInsights = true
@@ -210,6 +214,7 @@ struct SettingsView: View {
                     }
                     .disabled(!subscriptionManager.currentTier.hasSessionHistory)
                     .opacity(subscriptionManager.currentTier.hasSessionHistory ? 1 : 0.4)
+                    .accessibilityLabel("View AI-generated insights about your breathing practice")
                 } header: {
                     Text("Library")
                         .foregroundStyle(Color(hex: "6b6560"))

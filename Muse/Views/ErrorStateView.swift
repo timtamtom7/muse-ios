@@ -42,10 +42,10 @@ struct HapticsUnavailableAlert: View {
                 }
                 .padding(28)
                 .background(
-                    RoundedRectangle(cornerRadius: 20)
+                    RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                         .fill(Color(hex: "0f0f14"))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 20)
+                            RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                                 .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                         )
                 )
@@ -118,10 +118,10 @@ struct SessionInterruptedView: View {
             }
             .padding(32)
             .background(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                     )
             )
@@ -176,10 +176,10 @@ struct NoSessionsRemainingView: View {
             }
             .padding(32)
             .background(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                     )
             )
@@ -237,10 +237,10 @@ struct DurationNotAvailableView: View {
             }
             .padding(32)
             .background(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                     )
             )
@@ -414,10 +414,10 @@ struct NotificationDeniedErrorView: View {
             }
             .padding(32)
             .background(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                     )
             )
@@ -497,10 +497,10 @@ struct PatternSaveFailedView: View {
             }
             .padding(32)
             .background(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                     )
             )
@@ -580,10 +580,10 @@ struct WatchNotPairedView: View {
             }
             .padding(32)
             .background(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                     )
             )
@@ -664,10 +664,10 @@ struct SoundLoadFailedView: View {
             }
             .padding(32)
             .background(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(Color(hex: "2a2a30").opacity(0.6), lineWidth: 0.5)
                     )
             )

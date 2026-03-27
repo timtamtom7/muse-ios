@@ -151,9 +151,9 @@ struct AIInsightsView: View {
                 endPoint: .bottomTrailing
             )
         )
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.card))
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: Theme.CornerRadius.card)
                 .stroke(Color(hex: "3a3020"), lineWidth: 0.5)
         )
     }
@@ -199,7 +199,7 @@ struct InsightCard: View {
                 // Confidence indicator
                 HStack(spacing: 4) {
                     Text(confidenceLabel)
-                        .font(.system(size: 10, weight: .medium))
+                        .font(.system(size: 11, weight: .medium))
                         .foregroundStyle(iconColor.opacity(0.7))
 
                     ConfidenceBar(confidence: insight.confidence)
@@ -209,9 +209,9 @@ struct InsightCard: View {
             Spacer()
         }
         .padding(14)
-        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 14))
+        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.extraLarge))
         .overlay(
-            RoundedRectangle(cornerRadius: 14)
+            RoundedRectangle(cornerRadius: Theme.CornerRadius.extraLarge)
                 .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
         )
     }
@@ -247,12 +247,12 @@ struct PatternBar: View {
 
     var body: some View {
         VStack(spacing: 4) {
-            RoundedRectangle(cornerRadius: 2)
+            RoundedRectangle(cornerRadius: Theme.CornerRadius.extraSmall)
                 .fill(color.opacity(seconds == 0 ? 0.15 : 0.6))
                 .frame(width: 32, height: max(4, CGFloat(seconds) / CGFloat(maxSeconds) * 24))
 
             Text(seconds == 0 ? "—" : "\(seconds)s")
-                .font(.system(size: 9, weight: .medium))
+                .font(.system(size: 11, weight: .medium))
                 .foregroundStyle(color.opacity(seconds == 0 ? 0.4 : 0.8))
         }
     }
@@ -264,11 +264,11 @@ struct ConfidenceBar: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: 2)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.extraSmall)
                     .fill(Color(hex: "2a2a30"))
                     .frame(height: 3)
 
-                RoundedRectangle(cornerRadius: 2)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.extraSmall)
                     .fill(Color(hex: "c4a87a").opacity(0.6))
                     .frame(width: geometry.size.width * confidence, height: 3)
             }

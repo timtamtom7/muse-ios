@@ -87,10 +87,10 @@ struct PatternSelectionView: View {
                                 .padding(.vertical, 14)
                                 .frame(maxWidth: .infinity)
                                 .background(
-                                    RoundedRectangle(cornerRadius: 12)
+                                    RoundedRectangle(cornerRadius: Theme.CornerRadius.large)
                                         .fill(Color(hex: "1e1e24"))
                                         .overlay(
-                                            RoundedRectangle(cornerRadius: 12)
+                                            RoundedRectangle(cornerRadius: Theme.CornerRadius.large)
                                                 .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
                                         )
                                 )
@@ -124,10 +124,10 @@ struct PatternSelectionView: View {
                             .padding(20)
                             .frame(maxWidth: .infinity)
                             .background(
-                                RoundedRectangle(cornerRadius: 12)
+                                RoundedRectangle(cornerRadius: Theme.CornerRadius.large)
                                     .fill(Color(hex: "141418"))
                                     .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
+                                        RoundedRectangle(cornerRadius: Theme.CornerRadius.large)
                                             .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
                                     )
                             )
@@ -217,9 +217,9 @@ struct CustomPatternEditorView: View {
                                 .font(.system(size: 16))
                                 .foregroundStyle(Color(hex: "e8d5c4"))
                                 .padding(14)
-                                .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 10))
+                                .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.medium))
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
+                                    RoundedRectangle(cornerRadius: Theme.CornerRadius.medium)
                                         .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
                                 )
                         }
@@ -335,9 +335,9 @@ struct CustomPatternEditorView: View {
                 .tint(color)
         }
         .padding(14)
-        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 12))
+        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.large))
         .overlay(
-            RoundedRectangle(cornerRadius: 12)
+            RoundedRectangle(cornerRadius: Theme.CornerRadius.large)
                 .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
         )
     }

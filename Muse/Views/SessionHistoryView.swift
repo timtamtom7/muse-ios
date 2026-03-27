@@ -186,7 +186,7 @@ struct WeeklyStatItem: View {
                 .foregroundStyle(Color(hex: "e8d5c4"))
 
             Text(label)
-                .font(.system(size: 9, weight: .medium))
+                .font(.system(size: 11, weight: .medium))
                 .foregroundStyle(Color(hex: "6b6560"))
                 .multilineTextAlignment(.center)
                 .lineLimit(2)
@@ -290,7 +290,7 @@ struct SessionRowView: View {
 
                 if session.completedCycles > 0 {
                     Text("\(session.completedCycles) cycles")
-                        .font(.system(size: 10))
+                        .font(.system(size: 11))
                         .foregroundStyle(Color(hex: "6b6560").opacity(0.4))
                 }
             }

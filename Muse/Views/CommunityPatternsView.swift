@@ -37,9 +37,9 @@ struct CommunityPatternsView: View {
                             .autocorrectionDisabled()
                     }
                     .padding(12)
-                    .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 10))
+                    .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.medium))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 10)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.medium)
                             .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
                     )
                     .padding(.horizontal, 20)
@@ -263,7 +263,7 @@ struct CommunityPatternCard: View {
                     HStack(spacing: 6) {
                         ForEach(communityPattern.tags, id: \.self) { tag in
                             Text(tag)
-                                .font(.system(size: 10, weight: .medium))
+                                .font(.system(size: 11, weight: .medium))
                                 .foregroundStyle(Color(hex: "c4b5a0"))
                                 .padding(.horizontal, 8)
                                 .padding(.vertical, 4)
@@ -274,9 +274,9 @@ struct CommunityPatternCard: View {
             }
         }
         .padding(14)
-        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 14))
+        .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.extraLarge))
         .overlay(
-            RoundedRectangle(cornerRadius: 14)
+            RoundedRectangle(cornerRadius: Theme.CornerRadius.extraLarge)
                 .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
         )
     }
@@ -292,10 +292,10 @@ struct PatternRhythmBar: View {
     var body: some View {
         VStack(spacing: 3) {
             Text(seconds == 0 ? "—" : "\(seconds)s")
-                .font(.system(size: 10, weight: .medium, design: .rounded))
+                .font(.system(size: 11, weight: .medium, design: .rounded))
                 .foregroundStyle(color)
 
-            RoundedRectangle(cornerRadius: 2)
+            RoundedRectangle(cornerRadius: Theme.CornerRadius.extraSmall)
                 .fill(color.opacity(seconds == 0 ? 0.2 : 0.6))
                 .frame(width: 28, height: 4)
         }
@@ -350,7 +350,7 @@ struct SharePatternSheet: View {
                                     }
                                 }
                                 .padding(12)
-                                .background(Color(hex: "1e1e24"), in: RoundedRectangle(cornerRadius: 10))
+                                .background(Color(hex: "1e1e24"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.medium))
                             } else {
                                 Menu {
                                     ForEach(patternManager.allPatterns) { pattern in
@@ -371,7 +371,7 @@ struct SharePatternSheet: View {
                                             .foregroundStyle(Color(hex: "6b6560"))
                                     }
                                     .padding(12)
-                                    .background(Color(hex: "1e1e24"), in: RoundedRectangle(cornerRadius: 10))
+                                    .background(Color(hex: "1e1e24"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.medium))
                                 }
                             }
                         }
@@ -387,9 +387,9 @@ struct SharePatternSheet: View {
                                 .foregroundStyle(Color(hex: "e8d5c4"))
                                 .lineLimit(3...5)
                                 .padding(12)
-                                .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 10))
+                                .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.medium))
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
+                                    RoundedRectangle(cornerRadius: Theme.CornerRadius.medium)
                                         .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
                                 )
                         }
@@ -404,9 +404,9 @@ struct SharePatternSheet: View {
                                 .font(.system(size: 15))
                                 .foregroundStyle(Color(hex: "e8d5c4"))
                                 .padding(12)
-                                .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: 10))
+                                .background(Color(hex: "141418"), in: RoundedRectangle(cornerRadius: Theme.CornerRadius.medium))
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
+                                    RoundedRectangle(cornerRadius: Theme.CornerRadius.medium)
                                         .stroke(Color(hex: "2a2a30"), lineWidth: 0.5)
                                 )
                         }

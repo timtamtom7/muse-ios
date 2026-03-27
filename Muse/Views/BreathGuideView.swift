@@ -107,7 +107,7 @@ struct SessionTypePicker: View {
                             .frame(width: isCompact ? 6 : 8, height: isCompact ? 6 : 8)
 
                         Text(type.shortName)
-                            .font(.system(size: isCompact ? 9 : 11, weight: .medium))
+                            .font(.system(size: 11, weight: .medium))
                             .foregroundStyle(selectedType == type
                                 ? Color(hex: type.orbCoreColor)
                                 : Color(hex: "6b6560"))
@@ -115,13 +115,13 @@ struct SessionTypePicker: View {
                     .padding(.horizontal, isCompact ? 8 : 10)
                     .padding(.vertical, isCompact ? 6 : 8)
                     .background(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .fill(selectedType == type
                                 ? Color(hex: type.orbHaloColor).opacity(0.1)
                                 : Color.clear)
                     )
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.modal)
                             .stroke(
                                 selectedType == type
                                     ? Color(hex: type.orbHaloColor).opacity(0.3)

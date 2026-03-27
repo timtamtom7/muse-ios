@@ -52,6 +52,7 @@ struct BreatheView: View {
                             .padding(12)
                             .background(.ultraThinMaterial, in: Circle())
                     }
+                    .accessibilityLabel("View session history")
 
                     Spacer()
 
@@ -71,6 +72,7 @@ struct BreatheView: View {
                         .padding(.vertical, 8)
                         .background(.ultraThinMaterial, in: Capsule())
                     }
+                    .accessibilityLabel("Cycle session type. Currently \(sessionType.displayName)")
 
                     Spacer()
 
@@ -83,6 +85,7 @@ struct BreatheView: View {
                             .padding(12)
                             .background(.ultraThinMaterial, in: Circle())
                     }
+                    .accessibilityLabel("Open settings")
                 }
                 .padding(.horizontal, 24)
                 .padding(.top, 16)
@@ -104,6 +107,7 @@ struct BreatheView: View {
                 }
                 .buttonStyle(PlainButtonStyle())
                 .disabled(sessionManager.session.phase == .complete)
+                .accessibilityLabel(sessionManager.session.isActive ? "Stop breathing session" : "Start breathing session. Tap to begin.")
 
                 // Breath guide (shown during active session)
                 if sessionManager.session.isActive {

@@ -88,7 +88,7 @@ struct TierCard: View {
 
                         if tier == .master {
                             Text("Best")
-                                .font(.system(size: 10, weight: .semibold))
+                                .font(.system(size: 11, weight: .semibold))
                                 .foregroundStyle(Color(hex: "050508"))
                                 .padding(.horizontal, 6)
                                 .padding(.vertical, 2)
@@ -113,7 +113,7 @@ struct TierCard: View {
                     ForEach(tier.features.prefix(4), id: \.self) { feature in
                         HStack(spacing: 5) {
                             Image(systemName: "checkmark")
-                                .font(.system(size: 9, weight: .semibold))
+                                .font(.system(size: 11, weight: .semibold))
                                 .foregroundStyle(tierColor.opacity(0.8))
 
                             Text(feature)
@@ -125,10 +125,10 @@ struct TierCard: View {
             }
             .padding(18)
             .background(
-                RoundedRectangle(cornerRadius: 16)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.card)
                     .fill(Color(hex: "0f0f14"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 16)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.card)
                             .stroke(
                                 isSelected ? tierColor.opacity(0.4) : Color(hex: "2a2a30").opacity(0.5),
                                 lineWidth: isSelected ? 1.5 : 0.5

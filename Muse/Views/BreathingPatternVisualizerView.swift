@@ -43,7 +43,7 @@ struct BreathingPatternVisualizerView: View {
                     ForEach(0..<4, id: \.self) { i in
                         if phaseWidths[i] > 0 {
                             Text(phases[i].name)
-                                .font(.system(size: 10, weight: .medium))
+                                .font(.system(size: 11, weight: .medium))
                                 .foregroundStyle(phases[i].color.opacity(0.7))
                                 .frame(width: max(20, CGFloat(phaseWidths[i]) * (geo.size.width - 8)), alignment: .leading)
                                 .lineLimit(1)
@@ -63,11 +63,11 @@ struct BreathingPatternVisualizerView: View {
                             let isCurrentPhase = isActive && currentPhase == phaseForIndex(i)
                             let progress = isCurrentPhase ? phaseProgress : 0.0
 
-                            RoundedRectangle(cornerRadius: 4)
+                            RoundedRectangle(cornerRadius: Theme.CornerRadius.small)
                                 .fill(phases[i].color.opacity(isCurrentPhase ? 0.3 : 0.15))
                                 .frame(width: max(4, CGFloat(phaseWidths[i]) * totalWidth - 2))
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 4)
+                                    RoundedRectangle(cornerRadius: Theme.CornerRadius.small)
                                         .fill(phases[i].color.opacity(isCurrentPhase ? 0.8 : 0.0))
                                         .frame(width: max(4, CGFloat(phaseWidths[i]) * totalWidth - 2))
                                         .mask(
@@ -91,7 +91,7 @@ struct BreathingPatternVisualizerView: View {
                     ForEach(0..<4, id: \.self) { i in
                         if phaseWidths[i] > 0 {
                             Text(phaseDurationLabel(i))
-                                .font(.system(size: 9, weight: .light))
+                                .font(.system(size: 11, weight: .light))
                                 .foregroundStyle(phases[i].color.opacity(0.5))
                                 .frame(width: max(20, CGFloat(phaseWidths[i]) * (geo.size.width - 8)), alignment: .leading)
                         }
@@ -164,15 +164,15 @@ struct PatternPresetCard: View {
                         Text("\(Int(pattern.holdOutSeconds))s hold")
                     }
                 }
-                .font(.system(size: 10))
+                .font(.system(size: 11))
                 .foregroundStyle(Color(hex: "6b6560"))
             }
             .padding(14)
             .background(
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: Theme.CornerRadius.large)
                     .fill(Color(hex: isSelected ? "1e1e24" : "141418"))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 12)
+                        RoundedRectangle(cornerRadius: Theme.CornerRadius.large)
                             .stroke(
                                 Color(hex: isSelected ? "e8d5c4" : "2a2a30").opacity(isSelected ? 0.4 : 0.3),
                                 lineWidth: isSelected ? 1 : 0.5
@@ -185,7 +185,7 @@ struct PatternPresetCard: View {
 
     @ViewBuilder
     private func phaseBar(phase: BreathPhase, duration: Double) -> some View {
-        RoundedRectangle(cornerRadius: 2)
+        RoundedRectangle(cornerRadius: Theme.CornerRadius.extraSmall)
             .fill(phaseColor(phase).opacity(duration > 0 ? 0.7 : 0.2))
             .frame(minWidth: 4)
     }
