@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A812A64300D24D7903C449 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B019862715F4D2224FAA56 /* Models.swift */; };
+		3DB2CFB013180CC87D51FDC1 /* LibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C733CA5FB852A7CE90964 /* LibraryService.swift */; };
+		5B4F9625C604937F796B0733 /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A27516642498AE365EDF9 /* PlaylistsView.swift */; };
+		602C6C71137F8FA9E616EB0C /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D837AE19025236530E06EC /* NowPlayingView.swift */; };
+		6998E48C3C31BD76D024CE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8FE6CFA282F7265A8B6FB /* AppDelegate.swift */; };
+		6A94E14930EA5019D45B354C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C37C90D343D2C49AC25267 /* Theme.swift */; };
+		C170F146E0F886323DFF0789 /* MusicPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B3990D83E1F7BEF73D324 /* MusicPlayerService.swift */; };
+		C3EF1B36986F5B4F75005A8F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACF9FC7DF300F7E24CD7F2 /* LibraryView.swift */; };
+		C7D91BAA3638829A169DCB0C /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121FD9E6EEC36CE42A4F258 /* MenuBarView.swift */; };
+		D62DD51066E7DD30023813F0 /* MenuBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE730A787089A031900D884 /* MenuBarViewModel.swift */; };
+		DB5A16874932848162F72C81 /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C40C9FB64AD37F5EA3C64 /* QueueView.swift */; };
+		E2E35E2FF207CABD33F7EF41 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445519A92B8950699713199 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		048A27516642498AE365EDF9 /* PlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
+		458C733CA5FB852A7CE90964 /* LibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryService.swift; sourceTree = "<group>"; };
+		64D837AE19025236530E06EC /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		B2A8FE6CFA282F7265A8B6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7ACF9FC7DF300F7E24CD7F2 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		B98C40C9FB64AD37F5EA3C64 /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		BCE730A787089A031900D884 /* MenuBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewModel.swift; sourceTree = "<group>"; };
+		C5C37C90D343D2C49AC25267 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D9B019862715F4D2224FAA56 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E121FD9E6EEC36CE42A4F258 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		F445519A92B8950699713199 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F7593EF0407839F9BA74208E /* MuseMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0776E09AD23976A67353F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FE1B3990D83E1F7BEF73D324 /* MusicPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1764BEAE6023D03C1BF33D4A = {
+			isa = PBXGroup;
+			children = (
+				C161645750E2A1A1C5AE9D71 /* MuseMac */,
+				66310442799A850530EAFB54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66310442799A850530EAFB54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7593EF0407839F9BA74208E /* MuseMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		714729D35E0F40147E727002 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7ACF9FC7DF300F7E24CD7F2 /* LibraryView.swift */,
+				E121FD9E6EEC36CE42A4F258 /* MenuBarView.swift */,
+				BCE730A787089A031900D884 /* MenuBarViewModel.swift */,
+				64D837AE19025236530E06EC /* NowPlayingView.swift */,
+				048A27516642498AE365EDF9 /* PlaylistsView.swift */,
+				B98C40C9FB64AD37F5EA3C64 /* QueueView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98669A38436D5D3B6B3E09E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9B019862715F4D2224FAA56 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADA2237B2B6EA759D61A0740 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				458C733CA5FB852A7CE90964 /* LibraryService.swift */,
+				FE1B3990D83E1F7BEF73D324 /* MusicPlayerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C161645750E2A1A1C5AE9D71 /* MuseMac */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8FE6CFA282F7265A8B6FB /* AppDelegate.swift */,
+				FA0776E09AD23976A67353F2 /* Info.plist */,
+				F445519A92B8950699713199 /* main.swift */,
+				C5C37C90D343D2C49AC25267 /* Theme.swift */,
+				98669A38436D5D3B6B3E09E1 /* Models */,
+				ADA2237B2B6EA759D61A0740 /* Services */,
+				714729D35E0F40147E727002 /* Views */,
+			);
+			path = MuseMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1723AB8DE3538B9A40631E2E /* MuseMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F28997FE3426D6F05D6B19 /* Build configuration list for PBXNativeTarget "MuseMac" */;
+			buildPhases = (
+				47DF0D8175B06947AE78EA83 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuseMac;
+			productName = MuseMac;
+			productReference = F7593EF0407839F9BA74208E /* MuseMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFFDC15E723BF8BD9145763B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1723AB8DE3538B9A40631E2E = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = B902C3648BCF1F6360B673E9 /* Build configuration list for PBXProject "MuseMac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1764BEAE6023D03C1BF33D4A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1723AB8DE3538B9A40631E2E /* MuseMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47DF0D8175B06947AE78EA83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6998E48C3C31BD76D024CE9D /* AppDelegate.swift in Sources */,
+				3DB2CFB013180CC87D51FDC1 /* LibraryService.swift in Sources */,
+				C3EF1B36986F5B4F75005A8F /* LibraryView.swift in Sources */,
+				C7D91BAA3638829A169DCB0C /* MenuBarView.swift in Sources */,
+				D62DD51066E7DD30023813F0 /* MenuBarViewModel.swift in Sources */,
+				03A812A64300D24D7903C449 /* Models.swift in Sources */,
+				C170F146E0F886323DFF0789 /* MusicPlayerService.swift in Sources */,
+				602C6C71137F8FA9E616EB0C /* NowPlayingView.swift in Sources */,
+				5B4F9625C604937F796B0733 /* PlaylistsView.swift in Sources */,
+				DB5A16874932848162F72C81 /* QueueView.swift in Sources */,
+				6A94E14930EA5019D45B354C /* Theme.swift in Sources */,
+				E2E35E2FF207CABD33F7EF41 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A6070B76BC8292F117EC3708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A937FB66B8F12A7E092F54C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MuseMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tommaso.muse.mac;
+				PRODUCT_NAME = Muse;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F04E98DF07E4125B2F9D27F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MuseMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tommaso.muse.mac;
+				PRODUCT_NAME = Muse;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F9C590B67853909811DEE81D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33F28997FE3426D6F05D6B19 /* Build configuration list for PBXNativeTarget "MuseMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04E98DF07E4125B2F9D27F1 /* Debug */,
+				A937FB66B8F12A7E092F54C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B902C3648BCF1F6360B673E9 /* Build configuration list for PBXProject "MuseMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9C590B67853909811DEE81D /* Debug */,
+				A6070B76BC8292F117EC3708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFFDC15E723BF8BD9145763B /* Project object */;
+}
