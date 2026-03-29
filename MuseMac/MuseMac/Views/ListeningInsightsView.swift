@@ -75,11 +75,7 @@ struct ListeningInsightsView: View {
                         .foregroundColor(selectedTimeRange == range ? .white : Theme.textSecondary)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 6)
-                        .background(
-                            selectedTimeRange == range ?
-                            Theme.gradient.clipShape(Capsule()) :
-                            Color.clear.clipShape(Capsule())
-                        )
+                        .background(backgroundForRange(range))
                 }
                 .buttonStyle(.plain)
             }
@@ -87,6 +83,15 @@ struct ListeningInsightsView: View {
         .padding(4)
         .background(Theme.cardBg)
         .clipShape(Capsule())
+    }
+    
+    @ViewBuilder
+    private func backgroundForRange(_ range: TimeRange) -> some View {
+        if selectedTimeRange == range {
+            Theme.gradient.clipShape(Capsule())
+        } else {
+            Color.clear.clipShape(Capsule())
+        }
     }
 
     // MARK: - Genre Breakdown

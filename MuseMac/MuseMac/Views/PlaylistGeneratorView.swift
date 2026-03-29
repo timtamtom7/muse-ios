@@ -158,8 +158,8 @@ struct PlaylistGeneratorView: View {
     }
 
     private var estimatedDuration: Int {
-        let total = generatedPlaylist.reduce(0) { $0 + $1.duration }
-        return total / 60
+        let total = generatedPlaylist.reduce(0.0) { $0 + $1.duration }
+        return Int(total / 60)
     }
 
     // MARK: - Actions

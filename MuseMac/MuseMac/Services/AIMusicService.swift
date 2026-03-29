@@ -204,7 +204,7 @@ final class AIMusicService: ObservableObject, @unchecked Sendable {
 
         tagger.enumerateTags(in: text.startIndex..<text.endIndex, unit: .word, scheme: .lexicalClass, options: options) { tag, _ in
             if let tag = tag, [.noun, .verb, .adjective].contains(tag) {
-                let token = String(text[tagger.string.startIndex..<text.endIndex]).lowercased()
+                let token = String(text[text.startIndex..<text.endIndex]).lowercased()
                 keywords.insert(token)
             }
             return true
@@ -412,7 +412,7 @@ final class AIMusicService: ObservableObject, @unchecked Sendable {
     }
 
     func refreshRecommendations(for track: Track, library: [Track]) {
-        let recs = getRecommendations(for: track, from: library)
+        let recs: [Recommendation] = getRecommendations(for: track, from: library)
         DispatchQueue.main.async {
             self.recentRecommendations = recs
         }
