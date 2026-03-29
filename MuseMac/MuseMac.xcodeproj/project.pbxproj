@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		03A812A64300D24D7903C449 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B019862715F4D2224FAA56 /* Models.swift */; };
+		33B7143FF497DDC1E181C6AC /* ListeningInsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3970FF073864F6866EA1E36 /* ListeningInsightsView.swift */; };
 		3DB2CFB013180CC87D51FDC1 /* LibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C733CA5FB852A7CE90964 /* LibraryService.swift */; };
+		430B26CEE133977F1861E4E3 /* AIMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B6A6E7D5AC1A46B396932 /* AIMusicService.swift */; };
 		5B4F9625C604937F796B0733 /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A27516642498AE365EDF9 /* PlaylistsView.swift */; };
 		602C6C71137F8FA9E616EB0C /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D837AE19025236530E06EC /* NowPlayingView.swift */; };
 		6998E48C3C31BD76D024CE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8FE6CFA282F7265A8B6FB /* AppDelegate.swift */; };
 		6A94E14930EA5019D45B354C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C37C90D343D2C49AC25267 /* Theme.swift */; };
+		A952AC0A17477414B52C2B5B /* PlaylistGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFBA1658AE79DBDF1074690 /* PlaylistGeneratorView.swift */; };
 		C170F146E0F886323DFF0789 /* MusicPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B3990D83E1F7BEF73D324 /* MusicPlayerService.swift */; };
 		C3EF1B36986F5B4F75005A8F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACF9FC7DF300F7E24CD7F2 /* LibraryView.swift */; };
 		C7D91BAA3638829A169DCB0C /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121FD9E6EEC36CE42A4F258 /* MenuBarView.swift */; };
@@ -25,6 +28,7 @@
 		048A27516642498AE365EDF9 /* PlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
 		458C733CA5FB852A7CE90964 /* LibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryService.swift; sourceTree = "<group>"; };
 		64D837AE19025236530E06EC /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		A63B6A6E7D5AC1A46B396932 /* AIMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMusicService.swift; sourceTree = "<group>"; };
 		B2A8FE6CFA282F7265A8B6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7ACF9FC7DF300F7E24CD7F2 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		B98C40C9FB64AD37F5EA3C64 /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		C5C37C90D343D2C49AC25267 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D9B019862715F4D2224FAA56 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E121FD9E6EEC36CE42A4F258 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		E3970FF073864F6866EA1E36 /* ListeningInsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningInsightsView.swift; sourceTree = "<group>"; };
+		EDFBA1658AE79DBDF1074690 /* PlaylistGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistGeneratorView.swift; sourceTree = "<group>"; };
 		F445519A92B8950699713199 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F7593EF0407839F9BA74208E /* MuseMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0776E09AD23976A67353F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -59,9 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				B7ACF9FC7DF300F7E24CD7F2 /* LibraryView.swift */,
+				E3970FF073864F6866EA1E36 /* ListeningInsightsView.swift */,
 				E121FD9E6EEC36CE42A4F258 /* MenuBarView.swift */,
 				BCE730A787089A031900D884 /* MenuBarViewModel.swift */,
 				64D837AE19025236530E06EC /* NowPlayingView.swift */,
+				EDFBA1658AE79DBDF1074690 /* PlaylistGeneratorView.swift */,
 				048A27516642498AE365EDF9 /* PlaylistsView.swift */,
 				B98C40C9FB64AD37F5EA3C64 /* QueueView.swift */,
 			);
@@ -79,6 +87,7 @@
 		ADA2237B2B6EA759D61A0740 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A63B6A6E7D5AC1A46B396932 /* AIMusicService.swift */,
 				458C733CA5FB852A7CE90964 /* LibraryService.swift */,
 				FE1B3990D83E1F7BEF73D324 /* MusicPlayerService.swift */,
 			);
@@ -153,14 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430B26CEE133977F1861E4E3 /* AIMusicService.swift in Sources */,
 				6998E48C3C31BD76D024CE9D /* AppDelegate.swift in Sources */,
 				3DB2CFB013180CC87D51FDC1 /* LibraryService.swift in Sources */,
 				C3EF1B36986F5B4F75005A8F /* LibraryView.swift in Sources */,
+				33B7143FF497DDC1E181C6AC /* ListeningInsightsView.swift in Sources */,
 				C7D91BAA3638829A169DCB0C /* MenuBarView.swift in Sources */,
 				D62DD51066E7DD30023813F0 /* MenuBarViewModel.swift in Sources */,
 				03A812A64300D24D7903C449 /* Models.swift in Sources */,
 				C170F146E0F886323DFF0789 /* MusicPlayerService.swift in Sources */,
 				602C6C71137F8FA9E616EB0C /* NowPlayingView.swift in Sources */,
+				A952AC0A17477414B52C2B5B /* PlaylistGeneratorView.swift in Sources */,
 				5B4F9625C604937F796B0733 /* PlaylistsView.swift in Sources */,
 				DB5A16874932848162F72C81 /* QueueView.swift in Sources */,
 				6A94E14930EA5019D45B354C /* Theme.swift in Sources */,
